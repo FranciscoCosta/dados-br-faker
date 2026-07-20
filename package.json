@@ -1,0 +1,68 @@
+{
+  "name": "dados-br-faker",
+  "version": "0.1.0",
+  "description": "Modern, TypeScript-first Brazilian fake-data generator with internally coherent entities (CEP↔city↔state↔DDD), valid check digits, deterministic seeding, and the new alphanumeric CNPJ (2026).",
+  "keywords": [
+    "faker",
+    "brazil",
+    "brasil",
+    "cpf",
+    "cnpj",
+    "cnpj-alfanumerico",
+    "cep",
+    "fake-data",
+    "mock",
+    "seed",
+    "testing",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Francisco Costa <franciscocostadev@gmail.com>",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@11.15.1",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "check": "pnpm typecheck && pnpm lint && pnpm test",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.9",
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
