@@ -33,10 +33,8 @@ function mulberry32(seed: number): () => number {
   };
 }
 
-/** Build an {@link Rng} from a numeric seed. */
-export function createRng(seed: number): Rng {
-  const next = mulberry32(seed);
-
+/** Build the sampling surface on top of any `next(): number` source. */
+function buildRng(next: () => number): Rng {
   const int = (min: number, max: number): number => {
     return min + Math.floor(next() * (max - min + 1));
   };
@@ -71,4 +69,17 @@ export function createRng(seed: number): Rng {
   };
 
   return { next, int, bool, pick, weightedPick };
+}
+
+/** Build a deterministic {@link Rng} from a numeric seed. */
+export function createRng(seed: number): Rng {
+  return buildRng(mulberry32(seed));
+}
+
+/**
+ * Build a non-deterministic {@link Rng} backed by `Math.random`. Used by the
+ * standalone tree-shakeable generators, which are always random by design.
+ */
+export function createRandomRng(): Rng {
+  return buildRng(Math.random);
 }

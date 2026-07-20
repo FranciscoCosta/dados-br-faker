@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { createRng } from '../../src/engine/prng.js';
+import { createRandomRng, createRng } from '../../src/engine/prng.js';
 
 describe('createRng', () => {
   it('produces the same sequence for the same seed (deterministic)', () => {
@@ -97,6 +97,19 @@ describe('createRng', () => {
     it('throws when lengths differ', () => {
       const rng = createRng(1);
       expect(() => rng.weightedPick(['a', 'b'], [1])).toThrow();
+    });
+  });
+
+  describe('createRandomRng', () => {
+    it('exposes the same Rng surface and stays in range', () => {
+      const rng = createRandomRng();
+      for (let i = 0; i < 100; i++) {
+        const v = rng.next();
+        expect(v).toBeGreaterThanOrEqual(0);
+        expect(v).toBeLessThan(1);
+      }
+      expect(rng.int(1, 6)).toBeGreaterThanOrEqual(1);
+      expect(['a', 'b']).toContain(rng.pick(['a', 'b']));
     });
   });
 
