@@ -8,6 +8,7 @@
 
 import type { ItemPonderado, Municipio, UF } from '../types.js';
 import bairrosData from './bairros.json';
+import bancosData from './bancos.json';
 import estadosData from './estados.json';
 import logradourosData from './logradouros.json';
 import municipiosData from './municipios.json';
@@ -29,3 +30,4 @@ export const estados: Record<UF, string> = estadosData.estados as Record<
 export const modelosVeiculo: { marca: string; modelo: string }[] =
   veiculosData.modelos;
 export const coresVeiculo: string[] = veiculosData.cores;
+export const bancos: { nome: string; codigo: string }[] = bancosData.bancos;

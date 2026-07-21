@@ -1,0 +1,18 @@
+{
+  "source": "public — Brazilian bank COMPE codes (Banco Central)",
+  "bancos": [
+    { "nome": "Banco do Brasil", "codigo": "001" },
+    { "nome": "Santander", "codigo": "033" },
+    { "nome": "Caixa Econômica Federal", "codigo": "104" },
+    { "nome": "Bradesco", "codigo": "237" },
+    { "nome": "Itaú Unibanco", "codigo": "341" },
+    { "nome": "Nubank", "codigo": "260" },
+    { "nome": "Banco Inter", "codigo": "077" },
+    { "nome": "Banco C6", "codigo": "336" },
+    { "nome": "Banco Original", "codigo": "212" },
+    { "nome": "Sicredi", "codigo": "748" },
+    { "nome": "Sicoob", "codigo": "756" },
+    { "nome": "PagBank", "codigo": "290" },
+    { "nome": "Mercado Pago", "codigo": "323" }
+  ]
+}

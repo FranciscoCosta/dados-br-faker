@@ -25,6 +25,7 @@ import {
   gerarRenavam,
   gerarVeiculo,
 } from './generators/veiculo.js';
+import { gerarChavePix, gerarContaBancaria } from './generators/banco.js';
 
 import type { OpcoesCep } from './generators/cep.js';
 import type { OpcoesCnpj } from './generators/cnpj.js';
@@ -37,6 +38,7 @@ import type { OpcoesPessoa } from './generators/pessoa.js';
 import type { OpcoesRg } from './generators/rg.js';
 import type { OpcoesTelefone } from './generators/telefone.js';
 import type { OpcoesPlaca, Veiculo } from './generators/veiculo.js';
+import type { ContaBancaria, OpcoesChavePix } from './generators/banco.js';
 import type { Endereco, Empresa, Pessoa, UF } from './types.js';
 
 /** Library version, kept in sync with package.json at release time. */
@@ -103,6 +105,14 @@ export const renavam = (): string => gerarRenavam(createRandomRng());
 export const veiculo = (opcoes?: OpcoesPlaca): Veiculo =>
   gerarVeiculo(createRandomRng(), opcoes);
 
+/** Generate a random PIX key (random UUID v4 by default). */
+export const chavePix = (opcoes?: OpcoesChavePix): string =>
+  gerarChavePix(createRandomRng(), opcoes);
+
+/** Generate a random bank account with a real bank. */
+export const contaBancaria = (): ContaBancaria =>
+  gerarContaBancaria(createRandomRng());
+
 // --- Validators ------------------------------------------------------------
 export { validarCpf } from './generators/cpf.js';
 export { validarCnpj } from './generators/cnpj.js';
@@ -134,3 +144,8 @@ export type {
   FormatoPlaca,
   Veiculo,
 } from './generators/veiculo.js';
+export type {
+  OpcoesChavePix,
+  TipoChavePix,
+  ContaBancaria,
+} from './generators/banco.js';
