@@ -239,8 +239,8 @@ Runnable versions live in [`examples/`](./examples).
 ## Data & honesty
 
 - **Documents** (CPF, CNPJ, IE-SP) have correct check digits, verified against known vectors and 1000+ property-tested samples.
-- **Municipalities**: a curated set of major cities covering all 27 federative units, with UF/region/DDD and city-prefix CEP ranges. Not the full official Correios dataset — correctness was prioritized over volume.
-- **Names**: a curated, IBGE-inspired weighted list — representative, not exhaustive.
+- **Municipalities**: the 160 most populous cities, covering all 27 federative units — names, UF, region, and population from **IBGE** (2025 estimates), area codes from the `municipios-brasileiros` dataset, and **real Correios CEP ranges** per city.
+- **Names**: weighted by the **IBGE _Nomes no Brasil_** national frequency ranking (accented forms curated), plus a tail of modern given names.
 - **RG** uses the São Paulo format; it is illustrative, not an official record. Brazil has no single national RG algorithm.
 - **Inscrição Estadual**: São Paulo follows the official SEFAZ algorithm; other states use a self-consistent generic scheme sized to the state's IE length (documented in the source). These values are for coherent fixtures, not tax submission.
 

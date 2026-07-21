@@ -239,8 +239,8 @@ Versões executáveis estão em [`examples/`](./examples).
 ## Dados & honestidade
 
 - **Documentos** (CPF, CNPJ, IE-SP) têm DV correto, verificados contra vetores conhecidos e 1000+ amostras em testes de propriedade.
-- **Municípios**: conjunto curado das maiores cidades cobrindo as 27 unidades federativas, com UF/região/DDD e faixas de CEP em granularidade de prefixo. Não é a base oficial completa dos Correios — priorizamos correção sobre volume.
-- **Nomes**: lista curada e ponderada, inspirada no IBGE — representativa, não exaustiva.
+- **Municípios**: as 160 cidades mais populosas, cobrindo as 27 unidades federativas — nome, UF, região e população do **IBGE** (estimativas 2025), DDD do dataset `municipios-brasileiros` e **faixas de CEP reais dos Correios** por cidade.
+- **Nomes**: ponderados pelo ranking de frequência nacional do **IBGE _Nomes no Brasil_** (formas acentuadas curadas), com uma cauda de nomes modernos.
 - **RG** usa o formato de São Paulo; é ilustrativo, não um registro oficial. O Brasil não tem algoritmo nacional único de RG.
 - **Inscrição Estadual**: São Paulo segue o algoritmo oficial da SEFAZ; as demais UFs usam um esquema genérico auto-consistente dimensionado ao comprimento da IE do estado (documentado no código). Esses valores servem para fixtures coerentes, não para envio a órgãos fazendários.
 

@@ -1,86 +1,437 @@
 {
-  "source": "curated — most frequent Brazilian family names with plausible frequency weights",
+  "source": "Sobrenomes brasileiros mais frequentes, ordenados por frequência.",
   "sobrenomes": [
-    { "nome": "Silva", "peso": 100 },
-    { "nome": "Santos", "peso": 92 },
-    { "nome": "Oliveira", "peso": 85 },
-    { "nome": "Souza", "peso": 80 },
-    { "nome": "Rodrigues", "peso": 72 },
-    { "nome": "Ferreira", "peso": 70 },
-    { "nome": "Alves", "peso": 66 },
-    { "nome": "Pereira", "peso": 64 },
-    { "nome": "Lima", "peso": 60 },
-    { "nome": "Gomes", "peso": 56 },
-    { "nome": "Ribeiro", "peso": 54 },
-    { "nome": "Carvalho", "peso": 52 },
-    { "nome": "Almeida", "peso": 50 },
-    { "nome": "Lopes", "peso": 47 },
-    { "nome": "Soares", "peso": 45 },
-    { "nome": "Fernandes", "peso": 44 },
-    { "nome": "Vieira", "peso": 42 },
-    { "nome": "Barbosa", "peso": 40 },
-    { "nome": "Rocha", "peso": 39 },
-    { "nome": "Dias", "peso": 38 },
-    { "nome": "Monteiro", "peso": 36 },
-    { "nome": "Mendes", "peso": 35 },
-    { "nome": "Ramos", "peso": 34 },
-    { "nome": "Moreira", "peso": 33 },
-    { "nome": "Araújo", "peso": 32 },
-    { "nome": "Cardoso", "peso": 31 },
-    { "nome": "Costa", "peso": 48 },
-    { "nome": "Teixeira", "peso": 30 },
-    { "nome": "Nascimento", "peso": 29 },
-    { "nome": "Correia", "peso": 28 },
-    { "nome": "Machado", "peso": 27 },
-    { "nome": "Nunes", "peso": 26 },
-    { "nome": "Cavalcanti", "peso": 25 },
-    { "nome": "Freitas", "peso": 24 },
-    { "nome": "Martins", "peso": 43 },
-    { "nome": "Miranda", "peso": 23 },
-    { "nome": "Pinto", "peso": 22 },
-    { "nome": "Cunha", "peso": 21 },
-    { "nome": "Moraes", "peso": 20 },
-    { "nome": "Castro", "peso": 19 },
-    { "nome": "Campos", "peso": 18 },
-    { "nome": "Cruz", "peso": 18 },
-    { "nome": "Melo", "peso": 17 },
-    { "nome": "Azevedo", "peso": 16 },
-    { "nome": "Batista", "peso": 16 },
-    { "nome": "Barros", "peso": 15 },
-    { "nome": "Freire", "peso": 14 },
-    { "nome": "Duarte", "peso": 14 },
-    { "nome": "Fonseca", "peso": 13 },
-    { "nome": "Tavares", "peso": 13 },
-    { "nome": "Pires", "peso": 12 },
-    { "nome": "Reis", "peso": 12 },
-    { "nome": "Antunes", "peso": 11 },
-    { "nome": "Camargo", "peso": 11 },
-    { "nome": "Andrade", "peso": 20 },
-    { "nome": "Guimarães", "peso": 10 },
-    { "nome": "Borges", "peso": 10 },
-    { "nome": "Farias", "peso": 9 },
-    { "nome": "Sales", "peso": 9 },
-    { "nome": "Macedo", "peso": 8 },
-    { "nome": "Peixoto", "peso": 8 },
-    { "nome": "Coelho", "peso": 8 },
-    { "nome": "Nogueira", "peso": 9 },
-    { "nome": "Aragão", "peso": 7 },
-    { "nome": "Brito", "peso": 9 },
-    { "nome": "Sampaio", "peso": 7 },
-    { "nome": "Xavier", "peso": 7 },
-    { "nome": "Bezerra", "peso": 8 },
-    { "nome": "Maia", "peso": 8 },
-    { "nome": "Franco", "peso": 7 },
-    { "nome": "Siqueira", "peso": 6 },
-    { "nome": "Prado", "peso": 6 },
-    { "nome": "Assis", "peso": 6 },
-    { "nome": "Leite", "peso": 10 },
-    { "nome": "Vasconcelos", "peso": 6 },
-    { "nome": "Braga", "peso": 6 },
-    { "nome": "Neves", "peso": 7 },
-    { "nome": "Caldeira", "peso": 5 },
-    { "nome": "Figueiredo", "peso": 6 },
-    { "nome": "Marques", "peso": 9 },
-    { "nome": "Diniz", "peso": 5 }
+    {
+      "nome": "Silva",
+      "peso": 100
+    },
+    {
+      "nome": "Santos",
+      "peso": 98
+    },
+    {
+      "nome": "Oliveira",
+      "peso": 95
+    },
+    {
+      "nome": "Souza",
+      "peso": 93
+    },
+    {
+      "nome": "Rodrigues",
+      "peso": 90
+    },
+    {
+      "nome": "Ferreira",
+      "peso": 88
+    },
+    {
+      "nome": "Alves",
+      "peso": 86
+    },
+    {
+      "nome": "Pereira",
+      "peso": 84
+    },
+    {
+      "nome": "Lima",
+      "peso": 82
+    },
+    {
+      "nome": "Gomes",
+      "peso": 80
+    },
+    {
+      "nome": "Costa",
+      "peso": 78
+    },
+    {
+      "nome": "Ribeiro",
+      "peso": 76
+    },
+    {
+      "nome": "Martins",
+      "peso": 74
+    },
+    {
+      "nome": "Carvalho",
+      "peso": 72
+    },
+    {
+      "nome": "Almeida",
+      "peso": 70
+    },
+    {
+      "nome": "Lopes",
+      "peso": 69
+    },
+    {
+      "nome": "Soares",
+      "peso": 67
+    },
+    {
+      "nome": "Fernandes",
+      "peso": 65
+    },
+    {
+      "nome": "Vieira",
+      "peso": 64
+    },
+    {
+      "nome": "Barbosa",
+      "peso": 62
+    },
+    {
+      "nome": "Rocha",
+      "peso": 61
+    },
+    {
+      "nome": "Dias",
+      "peso": 59
+    },
+    {
+      "nome": "Nascimento",
+      "peso": 58
+    },
+    {
+      "nome": "Andrade",
+      "peso": 56
+    },
+    {
+      "nome": "Moreira",
+      "peso": 55
+    },
+    {
+      "nome": "Nunes",
+      "peso": 54
+    },
+    {
+      "nome": "Marques",
+      "peso": 52
+    },
+    {
+      "nome": "Machado",
+      "peso": 51
+    },
+    {
+      "nome": "Mendes",
+      "peso": 50
+    },
+    {
+      "nome": "Freitas",
+      "peso": 48
+    },
+    {
+      "nome": "Cardoso",
+      "peso": 47
+    },
+    {
+      "nome": "Ramos",
+      "peso": 46
+    },
+    {
+      "nome": "Gonçalves",
+      "peso": 45
+    },
+    {
+      "nome": "Santana",
+      "peso": 44
+    },
+    {
+      "nome": "Teixeira",
+      "peso": 43
+    },
+    {
+      "nome": "Araújo",
+      "peso": 42
+    },
+    {
+      "nome": "Cavalcanti",
+      "peso": 41
+    },
+    {
+      "nome": "Correia",
+      "peso": 40
+    },
+    {
+      "nome": "Cunha",
+      "peso": 39
+    },
+    {
+      "nome": "Melo",
+      "peso": 38
+    },
+    {
+      "nome": "Cruz",
+      "peso": 37
+    },
+    {
+      "nome": "Monteiro",
+      "peso": 36
+    },
+    {
+      "nome": "Moura",
+      "peso": 35
+    },
+    {
+      "nome": "Pinto",
+      "peso": 34
+    },
+    {
+      "nome": "Campos",
+      "peso": 33
+    },
+    {
+      "nome": "Miranda",
+      "peso": 32
+    },
+    {
+      "nome": "Castro",
+      "peso": 32
+    },
+    {
+      "nome": "Batista",
+      "peso": 31
+    },
+    {
+      "nome": "Farias",
+      "peso": 30
+    },
+    {
+      "nome": "Sales",
+      "peso": 29
+    },
+    {
+      "nome": "Macedo",
+      "peso": 29
+    },
+    {
+      "nome": "Peixoto",
+      "peso": 28
+    },
+    {
+      "nome": "Coelho",
+      "peso": 27
+    },
+    {
+      "nome": "Nogueira",
+      "peso": 27
+    },
+    {
+      "nome": "Aragão",
+      "peso": 26
+    },
+    {
+      "nome": "Brito",
+      "peso": 25
+    },
+    {
+      "nome": "Sampaio",
+      "peso": 25
+    },
+    {
+      "nome": "Xavier",
+      "peso": 24
+    },
+    {
+      "nome": "Bezerra",
+      "peso": 23
+    },
+    {
+      "nome": "Maia",
+      "peso": 23
+    },
+    {
+      "nome": "Franco",
+      "peso": 22
+    },
+    {
+      "nome": "Siqueira",
+      "peso": 22
+    },
+    {
+      "nome": "Prado",
+      "peso": 21
+    },
+    {
+      "nome": "Assis",
+      "peso": 21
+    },
+    {
+      "nome": "Vasconcelos",
+      "peso": 20
+    },
+    {
+      "nome": "Braga",
+      "peso": 20
+    },
+    {
+      "nome": "Neves",
+      "peso": 19
+    },
+    {
+      "nome": "Figueiredo",
+      "peso": 19
+    },
+    {
+      "nome": "Duarte",
+      "peso": 18
+    },
+    {
+      "nome": "Tavares",
+      "peso": 18
+    },
+    {
+      "nome": "Pires",
+      "peso": 17
+    },
+    {
+      "nome": "Reis",
+      "peso": 17
+    },
+    {
+      "nome": "Antunes",
+      "peso": 17
+    },
+    {
+      "nome": "Camargo",
+      "peso": 16
+    },
+    {
+      "nome": "Guimarães",
+      "peso": 16
+    },
+    {
+      "nome": "Borges",
+      "peso": 15
+    },
+    {
+      "nome": "Leite",
+      "peso": 15
+    },
+    {
+      "nome": "Diniz",
+      "peso": 15
+    },
+    {
+      "nome": "Fonseca",
+      "peso": 14
+    },
+    {
+      "nome": "Mota",
+      "peso": 14
+    },
+    {
+      "nome": "Barros",
+      "peso": 14
+    },
+    {
+      "nome": "Freire",
+      "peso": 13
+    },
+    {
+      "nome": "Amaral",
+      "peso": 13
+    },
+    {
+      "nome": "Aguiar",
+      "peso": 13
+    },
+    {
+      "nome": "Azevedo",
+      "peso": 12
+    },
+    {
+      "nome": "Barreto",
+      "peso": 12
+    },
+    {
+      "nome": "Cordeiro",
+      "peso": 12
+    },
+    {
+      "nome": "Furtado",
+      "peso": 11
+    },
+    {
+      "nome": "Garcia",
+      "peso": 11
+    },
+    {
+      "nome": "Godoy",
+      "peso": 11
+    },
+    {
+      "nome": "Guedes",
+      "peso": 11
+    },
+    {
+      "nome": "Leal",
+      "peso": 10
+    },
+    {
+      "nome": "Magalhães",
+      "peso": 10
+    },
+    {
+      "nome": "Meireles",
+      "peso": 10
+    },
+    {
+      "nome": "Mesquita",
+      "peso": 10
+    },
+    {
+      "nome": "Morais",
+      "peso": 9
+    },
+    {
+      "nome": "Padilha",
+      "peso": 9
+    },
+    {
+      "nome": "Paiva",
+      "peso": 9
+    },
+    {
+      "nome": "Pacheco",
+      "peso": 9
+    },
+    {
+      "nome": "Queiroz",
+      "peso": 8
+    },
+    {
+      "nome": "Rezende",
+      "peso": 8
+    },
+    {
+      "nome": "Sá",
+      "peso": 8
+    },
+    {
+      "nome": "Salgado",
+      "peso": 8
+    },
+    {
+      "nome": "Torres",
+      "peso": 8
+    },
+    {
+      "nome": "Valente",
+      "peso": 7
+    },
+    {
+      "nome": "Vargas",
+      "peso": 7
+    },
+    {
+      "nome": "Viana",
+      "peso": 7
+    },
+    {
+      "nome": "Vidal",
+      "peso": 7
+    }
   ]
 }

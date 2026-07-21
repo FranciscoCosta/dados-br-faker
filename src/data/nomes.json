@@ -1,160 +1,1087 @@
 {
-  "source": "curated — ordering inspired by IBGE 'Nomes no Brasil' frequency tiers",
+  "source": "IBGE \"Nomes no Brasil\" (ordem de frequência nacional, formas acentuadas curadas) + cauda de nomes modernos.",
   "masculinos": [
-    { "nome": "Miguel", "peso": 100 },
-    { "nome": "Arthur", "peso": 98 },
-    { "nome": "Gael", "peso": 95 },
-    { "nome": "Heitor", "peso": 93 },
-    { "nome": "Theo", "peso": 92 },
-    { "nome": "Davi", "peso": 90 },
-    { "nome": "Bernardo", "peso": 88 },
-    { "nome": "Gabriel", "peso": 86 },
-    { "nome": "Pedro", "peso": 85 },
-    { "nome": "Lorenzo", "peso": 83 },
-    { "nome": "Matheus", "peso": 82 },
-    { "nome": "Rafael", "peso": 80 },
-    { "nome": "Lucas", "peso": 79 },
-    { "nome": "Benjamin", "peso": 77 },
-    { "nome": "Guilherme", "peso": 75 },
-    { "nome": "Enzo", "peso": 74 },
-    { "nome": "Nicolas", "peso": 72 },
-    { "nome": "Gustavo", "peso": 70 },
-    { "nome": "Felipe", "peso": 69 },
-    { "nome": "João", "peso": 88 },
-    { "nome": "José", "peso": 84 },
-    { "nome": "Bruno", "peso": 66 },
-    { "nome": "Eduardo", "peso": 64 },
-    { "nome": "Henrique", "peso": 63 },
-    { "nome": "Vinicius", "peso": 62 },
-    { "nome": "Leonardo", "peso": 61 },
-    { "nome": "Daniel", "peso": 60 },
-    { "nome": "Samuel", "peso": 58 },
-    { "nome": "Antônio", "peso": 72 },
-    { "nome": "Francisco", "peso": 70 },
-    { "nome": "Carlos", "peso": 68 },
-    { "nome": "Paulo", "peso": 67 },
-    { "nome": "Marcos", "peso": 55 },
-    { "nome": "Luiz", "peso": 65 },
-    { "nome": "Marcelo", "peso": 52 },
-    { "nome": "Rodrigo", "peso": 51 },
-    { "nome": "André", "peso": 50 },
-    { "nome": "Fernando", "peso": 49 },
-    { "nome": "Ricardo", "peso": 48 },
-    { "nome": "Roberto", "peso": 47 },
-    { "nome": "Thiago", "peso": 46 },
-    { "nome": "Diego", "peso": 45 },
-    { "nome": "Fábio", "peso": 44 },
-    { "nome": "Alexandre", "peso": 43 },
-    { "nome": "Vitor", "peso": 42 },
-    { "nome": "Caio", "peso": 41 },
-    { "nome": "Igor", "peso": 40 },
-    { "nome": "Renato", "peso": 39 },
-    { "nome": "Sérgio", "peso": 38 },
-    { "nome": "Márcio", "peso": 37 },
-    { "nome": "Otávio", "peso": 36 },
-    { "nome": "Ryan", "peso": 35 },
-    { "nome": "Murilo", "peso": 34 },
-    { "nome": "Cauã", "peso": 33 },
-    { "nome": "Anthony", "peso": 32 },
-    { "nome": "Bryan", "peso": 31 },
-    { "nome": "Isaac", "peso": 30 },
-    { "nome": "Levi", "peso": 29 },
-    { "nome": "Noah", "peso": 28 },
-    { "nome": "Emanuel", "peso": 27 },
-    { "nome": "Joaquim", "peso": 26 },
-    { "nome": "Vicente", "peso": 25 },
-    { "nome": "Rael", "peso": 24 },
-    { "nome": "Ravi", "peso": 23 },
-    { "nome": "Yuri", "peso": 22 },
-    { "nome": "Kaique", "peso": 21 },
-    { "nome": "Wesley", "peso": 20 },
-    { "nome": "Jorge", "peso": 19 },
-    { "nome": "Adriano", "peso": 18 },
-    { "nome": "César", "peso": 17 },
-    { "nome": "Leandro", "peso": 16 },
-    { "nome": "Everton", "peso": 15 },
-    { "nome": "Danilo", "peso": 14 },
-    { "nome": "Robson", "peso": 13 },
-    { "nome": "Cristiano", "peso": 12 },
-    { "nome": "Wellington", "peso": 11 },
-    { "nome": "Douglas", "peso": 10 }
+    {
+      "nome": "José",
+      "peso": 100
+    },
+    {
+      "nome": "João",
+      "peso": 98
+    },
+    {
+      "nome": "Antônio",
+      "peso": 96
+    },
+    {
+      "nome": "Francisco",
+      "peso": 94
+    },
+    {
+      "nome": "Carlos",
+      "peso": 91
+    },
+    {
+      "nome": "Paulo",
+      "peso": 89
+    },
+    {
+      "nome": "Pedro",
+      "peso": 88
+    },
+    {
+      "nome": "Lucas",
+      "peso": 86
+    },
+    {
+      "nome": "Luiz",
+      "peso": 84
+    },
+    {
+      "nome": "Marcos",
+      "peso": 82
+    },
+    {
+      "nome": "Luís",
+      "peso": 80
+    },
+    {
+      "nome": "Gabriel",
+      "peso": 78
+    },
+    {
+      "nome": "Rafael",
+      "peso": 77
+    },
+    {
+      "nome": "Daniel",
+      "peso": 75
+    },
+    {
+      "nome": "Marcelo",
+      "peso": 73
+    },
+    {
+      "nome": "Bruno",
+      "peso": 72
+    },
+    {
+      "nome": "Eduardo",
+      "peso": 70
+    },
+    {
+      "nome": "Felipe",
+      "peso": 69
+    },
+    {
+      "nome": "Raimundo",
+      "peso": 67
+    },
+    {
+      "nome": "Rodrigo",
+      "peso": 66
+    },
+    {
+      "nome": "Manoel",
+      "peso": 64
+    },
+    {
+      "nome": "Mateus",
+      "peso": 63
+    },
+    {
+      "nome": "André",
+      "peso": 61
+    },
+    {
+      "nome": "Fernando",
+      "peso": 60
+    },
+    {
+      "nome": "Fábio",
+      "peso": 59
+    },
+    {
+      "nome": "Leonardo",
+      "peso": 57
+    },
+    {
+      "nome": "Gustavo",
+      "peso": 56
+    },
+    {
+      "nome": "Guilherme",
+      "peso": 55
+    },
+    {
+      "nome": "Leandro",
+      "peso": 54
+    },
+    {
+      "nome": "Tiago",
+      "peso": 52
+    },
+    {
+      "nome": "Anderson",
+      "peso": 51
+    },
+    {
+      "nome": "Ricardo",
+      "peso": 50
+    },
+    {
+      "nome": "Márcio",
+      "peso": 49
+    },
+    {
+      "nome": "Jorge",
+      "peso": 48
+    },
+    {
+      "nome": "Sebastião",
+      "peso": 47
+    },
+    {
+      "nome": "Alexandre",
+      "peso": 46
+    },
+    {
+      "nome": "Roberto",
+      "peso": 45
+    },
+    {
+      "nome": "Edson",
+      "peso": 44
+    },
+    {
+      "nome": "Diego",
+      "peso": 43
+    },
+    {
+      "nome": "Vitor",
+      "peso": 42
+    },
+    {
+      "nome": "Sérgio",
+      "peso": 41
+    },
+    {
+      "nome": "Cláudio",
+      "peso": 40
+    },
+    {
+      "nome": "Matheus",
+      "peso": 39
+    },
+    {
+      "nome": "Thiago",
+      "peso": 38
+    },
+    {
+      "nome": "Geraldo",
+      "peso": 38
+    },
+    {
+      "nome": "Adriano",
+      "peso": 37
+    },
+    {
+      "nome": "Luciano",
+      "peso": 36
+    },
+    {
+      "nome": "Júlio",
+      "peso": 35
+    },
+    {
+      "nome": "Renato",
+      "peso": 34
+    },
+    {
+      "nome": "Alex",
+      "peso": 34
+    },
+    {
+      "nome": "Vinícius",
+      "peso": 33
+    },
+    {
+      "nome": "Rogério",
+      "peso": 32
+    },
+    {
+      "nome": "Samuel",
+      "peso": 31
+    },
+    {
+      "nome": "Ronaldo",
+      "peso": 31
+    },
+    {
+      "nome": "Mário",
+      "peso": 30
+    },
+    {
+      "nome": "Flávio",
+      "peso": 29
+    },
+    {
+      "nome": "Douglas",
+      "peso": 29
+    },
+    {
+      "nome": "Igor",
+      "peso": 28
+    },
+    {
+      "nome": "Davi",
+      "peso": 28
+    },
+    {
+      "nome": "Manuel",
+      "peso": 27
+    },
+    {
+      "nome": "Jeferson",
+      "peso": 26
+    },
+    {
+      "nome": "Cícero",
+      "peso": 26
+    },
+    {
+      "nome": "Victor",
+      "peso": 25
+    },
+    {
+      "nome": "Miguel",
+      "peso": 25
+    },
+    {
+      "nome": "Robson",
+      "peso": 24
+    },
+    {
+      "nome": "Maurício",
+      "peso": 24
+    },
+    {
+      "nome": "Danilo",
+      "peso": 23
+    },
+    {
+      "nome": "Henrique",
+      "peso": 23
+    },
+    {
+      "nome": "Caio",
+      "peso": 22
+    },
+    {
+      "nome": "Reginaldo",
+      "peso": 22
+    },
+    {
+      "nome": "Joaquim",
+      "peso": 21
+    },
+    {
+      "nome": "Benedito",
+      "peso": 21
+    },
+    {
+      "nome": "Gilberto",
+      "peso": 20
+    },
+    {
+      "nome": "Marco",
+      "peso": 20
+    },
+    {
+      "nome": "Alan",
+      "peso": 19
+    },
+    {
+      "nome": "Nelson",
+      "peso": 19
+    },
+    {
+      "nome": "Cristiano",
+      "peso": 18
+    },
+    {
+      "nome": "Elias",
+      "peso": 18
+    },
+    {
+      "nome": "Wilson",
+      "peso": 18
+    },
+    {
+      "nome": "Valdir",
+      "peso": 17
+    },
+    {
+      "nome": "Emerson",
+      "peso": 17
+    },
+    {
+      "nome": "Luan",
+      "peso": 17
+    },
+    {
+      "nome": "David",
+      "peso": 16
+    },
+    {
+      "nome": "Renan",
+      "peso": 16
+    },
+    {
+      "nome": "Severino",
+      "peso": 15
+    },
+    {
+      "nome": "Fabrício",
+      "peso": 15
+    },
+    {
+      "nome": "Mauro",
+      "peso": 15
+    },
+    {
+      "nome": "Jonas",
+      "peso": 14
+    },
+    {
+      "nome": "Gilmar",
+      "peso": 14
+    },
+    {
+      "nome": "Jean",
+      "peso": 14
+    },
+    {
+      "nome": "Fabiano",
+      "peso": 14
+    },
+    {
+      "nome": "Wesley",
+      "peso": 13
+    },
+    {
+      "nome": "Diogo",
+      "peso": 13
+    },
+    {
+      "nome": "Adilson",
+      "peso": 13
+    },
+    {
+      "nome": "Jair",
+      "peso": 12
+    },
+    {
+      "nome": "Alessandro",
+      "peso": 12
+    },
+    {
+      "nome": "Everton",
+      "peso": 12
+    },
+    {
+      "nome": "Osvaldo",
+      "peso": 12
+    },
+    {
+      "nome": "Gilson",
+      "peso": 11
+    },
+    {
+      "nome": "Willian",
+      "peso": 11
+    },
+    {
+      "nome": "Joel",
+      "peso": 11
+    },
+    {
+      "nome": "Sílvio",
+      "peso": 11
+    },
+    {
+      "nome": "Hélio",
+      "peso": 10
+    },
+    {
+      "nome": "Maicon",
+      "peso": 10
+    },
+    {
+      "nome": "Reinaldo",
+      "peso": 10
+    },
+    {
+      "nome": "Pablo",
+      "peso": 10
+    },
+    {
+      "nome": "Artur",
+      "peso": 9
+    },
+    {
+      "nome": "Vagner",
+      "peso": 9
+    },
+    {
+      "nome": "Valter",
+      "peso": 9
+    },
+    {
+      "nome": "Celso",
+      "peso": 9
+    },
+    {
+      "nome": "Ivan",
+      "peso": 9
+    },
+    {
+      "nome": "Cleiton",
+      "peso": 8
+    },
+    {
+      "nome": "Vanderlei",
+      "peso": 8
+    },
+    {
+      "nome": "Vicente",
+      "peso": 8
+    },
+    {
+      "nome": "Arthur",
+      "peso": 8
+    },
+    {
+      "nome": "Milton",
+      "peso": 8
+    },
+    {
+      "nome": "Domingos",
+      "peso": 8
+    },
+    {
+      "nome": "Wagner",
+      "peso": 7
+    },
+    {
+      "nome": "Sandro",
+      "peso": 7
+    },
+    {
+      "nome": "Moisés",
+      "peso": 7
+    },
+    {
+      "nome": "Heitor",
+      "peso": 7
+    },
+    {
+      "nome": "Théo",
+      "peso": 7
+    },
+    {
+      "nome": "Bernardo",
+      "peso": 7
+    },
+    {
+      "nome": "Enzo",
+      "peso": 7
+    },
+    {
+      "nome": "Lorenzo",
+      "peso": 6
+    },
+    {
+      "nome": "Benjamin",
+      "peso": 6
+    },
+    {
+      "nome": "Nicolas",
+      "peso": 6
+    },
+    {
+      "nome": "Gael",
+      "peso": 6
+    },
+    {
+      "nome": "Ravi",
+      "peso": 6
+    },
+    {
+      "nome": "Noah",
+      "peso": 6
+    },
+    {
+      "nome": "Anthony",
+      "peso": 6
+    },
+    {
+      "nome": "Isaac",
+      "peso": 5
+    },
+    {
+      "nome": "Bryan",
+      "peso": 5
+    },
+    {
+      "nome": "Yuri",
+      "peso": 5
+    },
+    {
+      "nome": "Kaique",
+      "peso": 5
+    }
   ],
   "femininos": [
-    { "nome": "Helena", "peso": 100 },
-    { "nome": "Alice", "peso": 98 },
-    { "nome": "Laura", "peso": 96 },
-    { "nome": "Maria Alice", "peso": 94 },
-    { "nome": "Sophia", "peso": 93 },
-    { "nome": "Manuela", "peso": 91 },
-    { "nome": "Maitê", "peso": 89 },
-    { "nome": "Liz", "peso": 88 },
-    { "nome": "Cecília", "peso": 86 },
-    { "nome": "Isabella", "peso": 85 },
-    { "nome": "Luísa", "peso": 83 },
-    { "nome": "Eloá", "peso": 82 },
-    { "nome": "Heloísa", "peso": 81 },
-    { "nome": "Júlia", "peso": 80 },
-    { "nome": "Ayla", "peso": 78 },
-    { "nome": "Maria", "peso": 95 },
-    { "nome": "Valentina", "peso": 76 },
-    { "nome": "Maria Júlia", "peso": 74 },
-    { "nome": "Lorena", "peso": 72 },
-    { "nome": "Lívia", "peso": 71 },
-    { "nome": "Giovanna", "peso": 70 },
-    { "nome": "Maria Luíza", "peso": 69 },
-    { "nome": "Beatriz", "peso": 68 },
-    { "nome": "Mariana", "peso": 67 },
-    { "nome": "Emanuelly", "peso": 65 },
-    { "nome": "Ana Júlia", "peso": 64 },
-    { "nome": "Ana Luíza", "peso": 63 },
-    { "nome": "Ana Clara", "peso": 62 },
-    { "nome": "Melissa", "peso": 60 },
-    { "nome": "Yasmin", "peso": 59 },
-    { "nome": "Isabela", "peso": 58 },
-    { "nome": "Rebeca", "peso": 57 },
-    { "nome": "Ana", "peso": 82 },
-    { "nome": "Larissa", "peso": 55 },
-    { "nome": "Isis", "peso": 54 },
-    { "nome": "Antonella", "peso": 53 },
-    { "nome": "Gabriela", "peso": 52 },
-    { "nome": "Clara", "peso": 51 },
-    { "nome": "Pietra", "peso": 50 },
-    { "nome": "Esther", "peso": 49 },
-    { "nome": "Sarah", "peso": 48 },
-    { "nome": "Fernanda", "peso": 47 },
-    { "nome": "Carolina", "peso": 46 },
-    { "nome": "Amanda", "peso": 45 },
-    { "nome": "Camila", "peso": 44 },
-    { "nome": "Letícia", "peso": 43 },
-    { "nome": "Bruna", "peso": 42 },
-    { "nome": "Juliana", "peso": 41 },
-    { "nome": "Patrícia", "peso": 40 },
-    { "nome": "Aline", "peso": 39 },
-    { "nome": "Vanessa", "peso": 38 },
-    { "nome": "Débora", "peso": 37 },
-    { "nome": "Tatiane", "peso": 36 },
-    { "nome": "Priscila", "peso": 35 },
-    { "nome": "Adriana", "peso": 34 },
-    { "nome": "Sandra", "peso": 33 },
-    { "nome": "Simone", "peso": 32 },
-    { "nome": "Cristiane", "peso": 31 },
-    { "nome": "Renata", "peso": 30 },
-    { "nome": "Luana", "peso": 29 },
-    { "nome": "Jéssica", "peso": 28 },
-    { "nome": "Tainara", "peso": 27 },
-    { "nome": "Bianca", "peso": 26 },
-    { "nome": "Raquel", "peso": 25 },
-    { "nome": "Sabrina", "peso": 24 },
-    { "nome": "Daniela", "peso": 23 },
-    { "nome": "Elaine", "peso": 22 },
-    { "nome": "Regina", "peso": 21 },
-    { "nome": "Márcia", "peso": 20 },
-    { "nome": "Rosa", "peso": 19 },
-    { "nome": "Vera", "peso": 18 },
-    { "nome": "Cláudia", "peso": 17 },
-    { "nome": "Luciana", "peso": 16 },
-    { "nome": "Fabiana", "peso": 15 },
-    { "nome": "Michele", "peso": 14 },
-    { "nome": "Andréia", "peso": 13 }
+    {
+      "nome": "Maria",
+      "peso": 100
+    },
+    {
+      "nome": "Ana",
+      "peso": 98
+    },
+    {
+      "nome": "Francisca",
+      "peso": 96
+    },
+    {
+      "nome": "Antônia",
+      "peso": 94
+    },
+    {
+      "nome": "Adriana",
+      "peso": 91
+    },
+    {
+      "nome": "Juliana",
+      "peso": 89
+    },
+    {
+      "nome": "Márcia",
+      "peso": 88
+    },
+    {
+      "nome": "Fernanda",
+      "peso": 86
+    },
+    {
+      "nome": "Patrícia",
+      "peso": 84
+    },
+    {
+      "nome": "Aline",
+      "peso": 82
+    },
+    {
+      "nome": "Sandra",
+      "peso": 80
+    },
+    {
+      "nome": "Camila",
+      "peso": 78
+    },
+    {
+      "nome": "Amanda",
+      "peso": 77
+    },
+    {
+      "nome": "Bruna",
+      "peso": 75
+    },
+    {
+      "nome": "Jéssica",
+      "peso": 73
+    },
+    {
+      "nome": "Letícia",
+      "peso": 72
+    },
+    {
+      "nome": "Júlia",
+      "peso": 70
+    },
+    {
+      "nome": "Luciana",
+      "peso": 69
+    },
+    {
+      "nome": "Vanessa",
+      "peso": 67
+    },
+    {
+      "nome": "Mariana",
+      "peso": 66
+    },
+    {
+      "nome": "Gabriela",
+      "peso": 64
+    },
+    {
+      "nome": "Vera",
+      "peso": 63
+    },
+    {
+      "nome": "Vitória",
+      "peso": 61
+    },
+    {
+      "nome": "Larissa",
+      "peso": 60
+    },
+    {
+      "nome": "Cláudia",
+      "peso": 59
+    },
+    {
+      "nome": "Beatriz",
+      "peso": 57
+    },
+    {
+      "nome": "Rita",
+      "peso": 56
+    },
+    {
+      "nome": "Luana",
+      "peso": 55
+    },
+    {
+      "nome": "Sônia",
+      "peso": 54
+    },
+    {
+      "nome": "Renata",
+      "peso": 52
+    },
+    {
+      "nome": "Eliane",
+      "peso": 51
+    },
+    {
+      "nome": "Josefa",
+      "peso": 50
+    },
+    {
+      "nome": "Simone",
+      "peso": 49
+    },
+    {
+      "nome": "Natália",
+      "peso": 48
+    },
+    {
+      "nome": "Cristiane",
+      "peso": 47
+    },
+    {
+      "nome": "Carla",
+      "peso": 46
+    },
+    {
+      "nome": "Débora",
+      "peso": 45
+    },
+    {
+      "nome": "Rosângela",
+      "peso": 44
+    },
+    {
+      "nome": "Jaqueline",
+      "peso": 43
+    },
+    {
+      "nome": "Rosa",
+      "peso": 42
+    },
+    {
+      "nome": "Aparecida",
+      "peso": 41
+    },
+    {
+      "nome": "Daniela",
+      "peso": 40
+    },
+    {
+      "nome": "Marlene",
+      "peso": 39
+    },
+    {
+      "nome": "Terezinha",
+      "peso": 38
+    },
+    {
+      "nome": "Raimunda",
+      "peso": 38
+    },
+    {
+      "nome": "Andréia",
+      "peso": 37
+    },
+    {
+      "nome": "Fabiana",
+      "peso": 36
+    },
+    {
+      "nome": "Lúcia",
+      "peso": 35
+    },
+    {
+      "nome": "Raquel",
+      "peso": 34
+    },
+    {
+      "nome": "Ângela",
+      "peso": 34
+    },
+    {
+      "nome": "Rafaela",
+      "peso": 33
+    },
+    {
+      "nome": "Joana",
+      "peso": 32
+    },
+    {
+      "nome": "Luzia",
+      "peso": 31
+    },
+    {
+      "nome": "Elaine",
+      "peso": 31
+    },
+    {
+      "nome": "Regina",
+      "peso": 30
+    },
+    {
+      "nome": "Daniele",
+      "peso": 29
+    },
+    {
+      "nome": "Sueli",
+      "peso": 29
+    },
+    {
+      "nome": "Daiane",
+      "peso": 28
+    },
+    {
+      "nome": "Alessandra",
+      "peso": 28
+    },
+    {
+      "nome": "Isabel",
+      "peso": 27
+    },
+    {
+      "nome": "Sara",
+      "peso": 26
+    },
+    {
+      "nome": "Bianca",
+      "peso": 26
+    },
+    {
+      "nome": "Flávia",
+      "peso": 25
+    },
+    {
+      "nome": "Érica",
+      "peso": 25
+    },
+    {
+      "nome": "Viviane",
+      "peso": 24
+    },
+    {
+      "nome": "Silvana",
+      "peso": 24
+    },
+    {
+      "nome": "Priscila",
+      "peso": 23
+    },
+    {
+      "nome": "Paula",
+      "peso": 23
+    },
+    {
+      "nome": "Luíza",
+      "peso": 22
+    },
+    {
+      "nome": "Tereza",
+      "peso": 22
+    },
+    {
+      "nome": "Isabela",
+      "peso": 21
+    },
+    {
+      "nome": "Marta",
+      "peso": 21
+    },
+    {
+      "nome": "Caroline",
+      "peso": 20
+    },
+    {
+      "nome": "Janaína",
+      "peso": 20
+    },
+    {
+      "nome": "Laura",
+      "peso": 19
+    },
+    {
+      "nome": "Marli",
+      "peso": 19
+    },
+    {
+      "nome": "Tatiane",
+      "peso": 18
+    },
+    {
+      "nome": "Marina",
+      "peso": 18
+    },
+    {
+      "nome": "Sílvia",
+      "peso": 18
+    },
+    {
+      "nome": "Mônica",
+      "peso": 17
+    },
+    {
+      "nome": "Taís",
+      "peso": 17
+    },
+    {
+      "nome": "Michele",
+      "peso": 17
+    },
+    {
+      "nome": "Solange",
+      "peso": 16
+    },
+    {
+      "nome": "Edna",
+      "peso": 16
+    },
+    {
+      "nome": "Fátima",
+      "peso": 15
+    },
+    {
+      "nome": "Helena",
+      "peso": 15
+    },
+    {
+      "nome": "Cristina",
+      "peso": 15
+    },
+    {
+      "nome": "Alice",
+      "peso": 14
+    },
+    {
+      "nome": "Carolina",
+      "peso": 14
+    },
+    {
+      "nome": "Rosana",
+      "peso": 14
+    },
+    {
+      "nome": "Andressa",
+      "peso": 14
+    },
+    {
+      "nome": "Célia",
+      "peso": 13
+    },
+    {
+      "nome": "Valéria",
+      "peso": 13
+    },
+    {
+      "nome": "Eliana",
+      "peso": 13
+    },
+    {
+      "nome": "Sabrina",
+      "peso": 12
+    },
+    {
+      "nome": "Andréa",
+      "peso": 12
+    },
+    {
+      "nome": "Tânia",
+      "peso": 12
+    },
+    {
+      "nome": "Bárbara",
+      "peso": 12
+    },
+    {
+      "nome": "Thaís",
+      "peso": 11
+    },
+    {
+      "nome": "Denise",
+      "peso": 11
+    },
+    {
+      "nome": "Roseli",
+      "peso": 11
+    },
+    {
+      "nome": "Gisele",
+      "peso": 11
+    },
+    {
+      "nome": "Marilene",
+      "peso": 10
+    },
+    {
+      "nome": "Kátia",
+      "peso": 10
+    },
+    {
+      "nome": "Eva",
+      "peso": 10
+    },
+    {
+      "nome": "Milena",
+      "peso": 10
+    },
+    {
+      "nome": "Eduarda",
+      "peso": 9
+    },
+    {
+      "nome": "Elisângela",
+      "peso": 9
+    },
+    {
+      "nome": "Vilma",
+      "peso": 9
+    },
+    {
+      "nome": "Geovana",
+      "peso": 9
+    },
+    {
+      "nome": "Luciene",
+      "peso": 9
+    },
+    {
+      "nome": "Tamires",
+      "peso": 8
+    },
+    {
+      "nome": "Tatiana",
+      "peso": 8
+    },
+    {
+      "nome": "Roberta",
+      "peso": 8
+    },
+    {
+      "nome": "Elza",
+      "peso": 8
+    },
+    {
+      "nome": "Talita",
+      "peso": 8
+    },
+    {
+      "nome": "Marcela",
+      "peso": 8
+    },
+    {
+      "nome": "Pâmela",
+      "peso": 7
+    },
+    {
+      "nome": "Vânia",
+      "peso": 7
+    },
+    {
+      "nome": "Irene",
+      "peso": 7
+    },
+    {
+      "nome": "Sophia",
+      "peso": 7
+    },
+    {
+      "nome": "Manuela",
+      "peso": 7
+    },
+    {
+      "nome": "Cecília",
+      "peso": 7
+    },
+    {
+      "nome": "Valentina",
+      "peso": 7
+    },
+    {
+      "nome": "Heloísa",
+      "peso": 6
+    },
+    {
+      "nome": "Maitê",
+      "peso": 6
+    },
+    {
+      "nome": "Lorena",
+      "peso": 6
+    },
+    {
+      "nome": "Lívia",
+      "peso": 6
+    },
+    {
+      "nome": "Giovanna",
+      "peso": 6
+    },
+    {
+      "nome": "Isadora",
+      "peso": 6
+    },
+    {
+      "nome": "Antonella",
+      "peso": 6
+    },
+    {
+      "nome": "Ayla",
+      "peso": 5
+    },
+    {
+      "nome": "Melissa",
+      "peso": 5
+    },
+    {
+      "nome": "Yasmin",
+      "peso": 5
+    },
+    {
+      "nome": "Pietra",
+      "peso": 5
+    }
   ]
 }
