@@ -149,6 +149,20 @@ faker.empresa({ uf: 'RS', cnpjFormato: 'alfanumerico' });
 
 Formatos de retorno: [`Endereco`](./src/types.ts), [`Pessoa`](./src/types.ts), [`Empresa`](./src/types.ts), [`Telefone`](./src/types.ts).
 
+### Veículos & bancário
+
+```ts
+faker.placa(); // 'ABC1D23' (Mercosul) — ou { formato: 'antiga' } → 'ABC-1234'
+faker.renavam(); // '54088307874' — DV DENATRAN válido
+faker.veiculo(); // { marca, modelo, ano, cor, placa, renavam }
+
+faker.chavePix(); // UUID v4 aleatória (chave EVP)
+faker.chavePix({ tipo: 'telefone' }); // '+5511987654321'  (também 'cpf' | 'email')
+faker.contaBancaria(); // { banco, codigoBanco, agencia, conta }
+```
+
+Os códigos COMPE dos bancos são reais; o DV da conta é um esquema genérico documentado (as regras por banco não são padronizadas). O DV do RENAVAM é validável por `validarRenavam`.
+
 ### Validadores
 
 ```ts
@@ -156,11 +170,13 @@ import {
   validarCpf,
   validarCnpj,
   validarInscricaoEstadual,
+  validarRenavam,
 } from 'dados-br-faker';
 
 validarCpf('529.982.247-25'); // true (com ou sem máscara)
 validarCnpj('12ABC34501DE35'); // true (numérico ou alfanumérico)
 validarInscricaoEstadual('110042490114', 'SP'); // true
+validarRenavam('54088307874'); // true
 ```
 
 ## Receitas

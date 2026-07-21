@@ -149,6 +149,20 @@ faker.empresa({ uf: 'RS', cnpjFormato: 'alfanumerico' });
 
 Returned shapes: [`Endereco`](./src/types.ts), [`Pessoa`](./src/types.ts), [`Empresa`](./src/types.ts), [`Telefone`](./src/types.ts).
 
+### Vehicles & banking
+
+```ts
+faker.placa(); // 'ABC1D23' (Mercosul) — or { formato: 'antiga' } → 'ABC-1234'
+faker.renavam(); // '54088307874' — valid DENATRAN check digit
+faker.veiculo(); // { marca, modelo, ano, cor, placa, renavam }
+
+faker.chavePix(); // random UUID v4 (EVP key)
+faker.chavePix({ tipo: 'telefone' }); // '+5511987654321'  (also 'cpf' | 'email')
+faker.contaBancaria(); // { banco, codigoBanco, agencia, conta }
+```
+
+Bank COMPE codes are real; the account check digit is a documented generic scheme (per-bank rules are not standardized). RENAVAM check digits are validated by `validarRenavam`.
+
 ### Validators
 
 ```ts
@@ -156,11 +170,13 @@ import {
   validarCpf,
   validarCnpj,
   validarInscricaoEstadual,
+  validarRenavam,
 } from 'dados-br-faker';
 
 validarCpf('529.982.247-25'); // true (with or without mask)
 validarCnpj('12ABC34501DE35'); // true (numeric or alphanumeric)
 validarInscricaoEstadual('110042490114', 'SP'); // true
+validarRenavam('54088307874'); // true
 ```
 
 ## Recipes
