@@ -49,7 +49,10 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "check": "pnpm typecheck && pnpm lint && pnpm test",
-    "release": "changeset publish"
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
+    "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.9",

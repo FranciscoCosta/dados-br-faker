@@ -3,6 +3,7 @@
 > Modern, TypeScript-first generator of **coherent** Brazilian fake data — the CEP belongs to the city, the city to the state, the phone's DDD to the region, the age to the birth date. Valid check digits, deterministic seeding, real tree-shaking, and first-class support for the **2026 alphanumeric CNPJ**.
 
 [![npm version](https://img.shields.io/npm/v/dados-br-faker.svg)](https://www.npmjs.com/package/dados-br-faker)
+[![CI](https://github.com/OWNER/dados-br-faker/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/dados-br-faker/actions/workflows/ci.yml)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/dados-br-faker)](https://bundlephobia.com/package/dados-br-faker)
 [![types](https://img.shields.io/npm/types/dados-br-faker.svg)](https://www.npmjs.com/package/dados-br-faker)
 [![license](https://img.shields.io/npm/l/dados-br-faker.svg)](./LICENSE)
