@@ -35,5 +35,12 @@ export default [
       '@typescript-eslint/consistent-type-imports': 'error',
     },
   },
+  {
+    // Tests favor readability over ceremony; return-type annotations add noise.
+    files: ['tests/**/*.ts'],
+    rules: {
+      '@typescript-eslint/explicit-function-return-type': 'off',
+    },
+  },
   prettier,
 ];

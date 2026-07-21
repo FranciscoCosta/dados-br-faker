@@ -6,8 +6,9 @@
  * that couples them to TypeScript types.
  */
 
-import type { ItemPonderado, Municipio } from '../types.js';
+import type { ItemPonderado, Municipio, UF } from '../types.js';
 import bairrosData from './bairros.json';
+import estadosData from './estados.json';
 import logradourosData from './logradouros.json';
 import municipiosData from './municipios.json';
 import nomesData from './nomes.json';
@@ -20,3 +21,7 @@ export const municipios: Municipio[] = municipiosData.municipios as Municipio[];
 export const tiposLogradouro: ItemPonderado[] = logradourosData.tipos;
 export const nomesLogradouro: string[] = logradourosData.nomes;
 export const bairros: string[] = bairrosData.bairros;
+export const estados: Record<UF, string> = estadosData.estados as Record<
+  UF,
+  string
+>;
