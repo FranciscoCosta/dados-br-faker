@@ -20,6 +20,11 @@ import { gerarPessoa } from './generators/pessoa.js';
 import { gerarRg } from './generators/rg.js';
 import { gerarTelefone } from './generators/telefone.js';
 import { gerarInscricaoEstadual } from './generators/inscricao-estadual.js';
+import {
+  gerarPlaca,
+  gerarRenavam,
+  gerarVeiculo,
+} from './generators/veiculo.js';
 
 import type { OpcoesCep } from './generators/cep.js';
 import type { OpcoesCnpj } from './generators/cnpj.js';
@@ -31,6 +36,7 @@ import type { OpcoesNome } from './generators/nome.js';
 import type { OpcoesPessoa } from './generators/pessoa.js';
 import type { OpcoesRg } from './generators/rg.js';
 import type { OpcoesTelefone } from './generators/telefone.js';
+import type { OpcoesPlaca, Veiculo } from './generators/veiculo.js';
 import type { Endereco, Empresa, Pessoa, UF } from './types.js';
 
 /** Library version, kept in sync with package.json at release time. */
@@ -86,10 +92,22 @@ export const empresa = (opcoes?: OpcoesEmpresa): Empresa =>
 export const inscricaoEstadual = (uf: UF): string =>
   gerarInscricaoEstadual(createRandomRng(), uf);
 
+/** Generate a random license plate (Mercosul by default). */
+export const placa = (opcoes?: OpcoesPlaca): string =>
+  gerarPlaca(createRandomRng(), opcoes);
+
+/** Generate a random valid 11-digit RENAVAM. */
+export const renavam = (): string => gerarRenavam(createRandomRng());
+
+/** Generate a random vehicle with a valid RENAVAM. */
+export const veiculo = (opcoes?: OpcoesPlaca): Veiculo =>
+  gerarVeiculo(createRandomRng(), opcoes);
+
 // --- Validators ------------------------------------------------------------
 export { validarCpf } from './generators/cpf.js';
 export { validarCnpj } from './generators/cnpj.js';
 export { validarInscricaoEstadual } from './generators/inscricao-estadual.js';
+export { validarRenavam } from './generators/veiculo.js';
 
 // --- Types -----------------------------------------------------------------
 export type {
@@ -111,3 +129,8 @@ export type { OpcoesEmail } from './generators/email.js';
 export type { OpcoesEndereco } from './generators/endereco.js';
 export type { OpcoesPessoa } from './generators/pessoa.js';
 export type { OpcoesEmpresa } from './generators/empresa.js';
+export type {
+  OpcoesPlaca,
+  FormatoPlaca,
+  Veiculo,
+} from './generators/veiculo.js';

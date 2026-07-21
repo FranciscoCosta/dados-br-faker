@@ -13,6 +13,9 @@ const METODOS = [
   'endereco',
   'pessoa',
   'empresa',
+  'placa',
+  'renavam',
+  'veiculo',
 ] as const;
 
 describe('createFaker determinism', () => {

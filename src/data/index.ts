@@ -13,6 +13,7 @@ import logradourosData from './logradouros.json';
 import municipiosData from './municipios.json';
 import nomesData from './nomes.json';
 import sobrenomesData from './sobrenomes.json';
+import veiculosData from './veiculos.json';
 
 export const nomesMasculinos: ItemPonderado[] = nomesData.masculinos;
 export const nomesFemininos: ItemPonderado[] = nomesData.femininos;
@@ -25,3 +26,6 @@ export const estados: Record<UF, string> = estadosData.estados as Record<
   UF,
   string
 >;
+export const modelosVeiculo: { marca: string; modelo: string }[] =
+  veiculosData.modelos;
+export const coresVeiculo: string[] = veiculosData.cores;

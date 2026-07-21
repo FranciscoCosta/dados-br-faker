@@ -23,6 +23,12 @@ import type { OpcoesRg } from './generators/rg.js';
 import { gerarRg } from './generators/rg.js';
 import type { OpcoesTelefone } from './generators/telefone.js';
 import { gerarTelefone } from './generators/telefone.js';
+import type { OpcoesPlaca, Veiculo } from './generators/veiculo.js';
+import {
+  gerarPlaca,
+  gerarRenavam,
+  gerarVeiculo,
+} from './generators/veiculo.js';
 
 /** Options for {@link createFaker}. */
 export interface OpcoesFaker {
@@ -42,6 +48,9 @@ export interface Faker {
   endereco(opcoes?: OpcoesEndereco): Endereco;
   pessoa(opcoes?: OpcoesPessoa): Pessoa;
   empresa(opcoes?: OpcoesEmpresa): Empresa;
+  placa(opcoes?: OpcoesPlaca): string;
+  renavam(): string;
+  veiculo(opcoes?: OpcoesPlaca): Veiculo;
   /** Re-seed the stream, resetting the sequence deterministically. */
   seed(valor: number): void;
 }
@@ -62,6 +71,9 @@ export function createFaker(opcoes: OpcoesFaker = {}): Faker {
     endereco: (o) => gerarEndereco(rng, o),
     pessoa: (o) => gerarPessoa(rng, o),
     empresa: (o) => gerarEmpresa(rng, o),
+    placa: (o) => gerarPlaca(rng, o),
+    renavam: () => gerarRenavam(rng),
+    veiculo: (o) => gerarVeiculo(rng, o),
     seed: (valor) => {
       rng = createRng(valor);
     },
