@@ -31,12 +31,7 @@ export type UF =
   | 'TO';
 
 /** The five Brazilian macro-regions. */
-export type Regiao =
-  | 'Norte'
-  | 'Nordeste'
-  | 'Centro-Oeste'
-  | 'Sudeste'
-  | 'Sul';
+export type Regiao = 'Norte' | 'Nordeste' | 'Centro-Oeste' | 'Sudeste' | 'Sul';
 
 /** A weighted dataset entry (higher weight = more frequent). */
 export interface ItemPonderado {

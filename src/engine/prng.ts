@@ -53,7 +53,9 @@ function buildRng(next: () => number): Rng {
     weights: readonly number[],
   ): T => {
     if (items.length !== weights.length) {
-      throw new Error('weightedPick: items and weights must be the same length');
+      throw new Error(
+        'weightedPick: items and weights must be the same length',
+      );
     }
     if (items.length === 0) {
       throw new Error('weightedPick: cannot pick from an empty array');

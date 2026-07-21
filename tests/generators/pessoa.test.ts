@@ -4,8 +4,7 @@ import { createRng } from '../../src/engine/prng.js';
 import { validarCpf } from '../../src/generators/cpf.js';
 import { calcularIdade, gerarPessoa } from '../../src/generators/pessoa.js';
 
-const municipioDe = (nome: string) =>
-  municipios.find((m) => m.nome === nome)!;
+const municipioDe = (nome: string) => municipios.find((m) => m.nome === nome)!;
 
 describe('gerarPessoa', () => {
   it('is deterministic for a given seed', () => {

@@ -41,7 +41,11 @@ export function sobrenomeCompleto(rng: Rng): string {
   if (!rng.bool(0.6)) return primeiro;
   let segundo = sobrenome(rng);
   // Avoid a duplicated surname like "Silva Silva".
-  for (let tentativas = 0; segundo === primeiro && tentativas < 5; tentativas++) {
+  for (
+    let tentativas = 0;
+    segundo === primeiro && tentativas < 5;
+    tentativas++
+  ) {
     segundo = sobrenome(rng);
   }
   return `${primeiro} ${segundo}`;

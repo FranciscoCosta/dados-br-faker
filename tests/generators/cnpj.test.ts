@@ -71,7 +71,9 @@ describe('gerarCnpj — alphanumeric', () => {
       formato: 'alfanumerico',
       mascara: true,
     });
-    expect(cnpj).toMatch(/^[0-9A-Z]{2}\.[0-9A-Z]{3}\.[0-9A-Z]{3}\/[0-9A-Z]{4}-\d{2}$/);
+    expect(cnpj).toMatch(
+      /^[0-9A-Z]{2}\.[0-9A-Z]{3}\.[0-9A-Z]{3}\/[0-9A-Z]{4}-\d{2}$/,
+    );
   });
 
   it('property: 1000 alphanumeric CNPJs are all valid', () => {

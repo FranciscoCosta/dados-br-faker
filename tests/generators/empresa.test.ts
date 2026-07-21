@@ -5,8 +5,7 @@ import { validarCnpj } from '../../src/generators/cnpj.js';
 import { gerarEmpresa } from '../../src/generators/empresa.js';
 import { validarInscricaoEstadual } from '../../src/generators/inscricao-estadual.js';
 
-const municipioDe = (nome: string) =>
-  municipios.find((m) => m.nome === nome)!;
+const municipioDe = (nome: string) => municipios.find((m) => m.nome === nome)!;
 
 describe('gerarEmpresa', () => {
   it('is deterministic for a given seed', () => {

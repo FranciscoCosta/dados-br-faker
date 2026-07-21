@@ -1,57 +1,473 @@
 {
   "source": "curated — UF/região/DDD from public knowledge; CEP ranges at city-prefix granularity (approximate, conservative). Not an official Correios dataset.",
   "municipios": [
-    { "nome": "São Paulo", "uf": "SP", "regiao": "Sudeste", "cepInicio": "01000000", "cepFim": "05999999", "ddds": ["11"], "populacao": 11451245 },
-    { "nome": "Rio de Janeiro", "uf": "RJ", "regiao": "Sudeste", "cepInicio": "20000000", "cepFim": "23799999", "ddds": ["21"], "populacao": 6211423 },
-    { "nome": "Brasília", "uf": "DF", "regiao": "Centro-Oeste", "cepInicio": "70000000", "cepFim": "72799999", "ddds": ["61"], "populacao": 2817381 },
-    { "nome": "Salvador", "uf": "BA", "regiao": "Nordeste", "cepInicio": "40000000", "cepFim": "42599999", "ddds": ["71"], "populacao": 2417678 },
-    { "nome": "Fortaleza", "uf": "CE", "regiao": "Nordeste", "cepInicio": "60000000", "cepFim": "61999999", "ddds": ["85"], "populacao": 2428708 },
-    { "nome": "Belo Horizonte", "uf": "MG", "regiao": "Sudeste", "cepInicio": "30000000", "cepFim": "31999999", "ddds": ["31"], "populacao": 2315560 },
-    { "nome": "Manaus", "uf": "AM", "regiao": "Norte", "cepInicio": "69000000", "cepFim": "69099999", "ddds": ["92"], "populacao": 2063689 },
-    { "nome": "Curitiba", "uf": "PR", "regiao": "Sul", "cepInicio": "80000000", "cepFim": "82999999", "ddds": ["41"], "populacao": 1773718 },
-    { "nome": "Recife", "uf": "PE", "regiao": "Nordeste", "cepInicio": "50000000", "cepFim": "52999999", "ddds": ["81"], "populacao": 1488920 },
-    { "nome": "Goiânia", "uf": "GO", "regiao": "Centro-Oeste", "cepInicio": "74000000", "cepFim": "74899999", "ddds": ["62"], "populacao": 1437366 },
-    { "nome": "Porto Alegre", "uf": "RS", "regiao": "Sul", "cepInicio": "90000000", "cepFim": "91999999", "ddds": ["51"], "populacao": 1332570 },
-    { "nome": "Belém", "uf": "PA", "regiao": "Norte", "cepInicio": "66000000", "cepFim": "66999999", "ddds": ["91"], "populacao": 1303403 },
-    { "nome": "Guarulhos", "uf": "SP", "regiao": "Sudeste", "cepInicio": "07000000", "cepFim": "07399999", "ddds": ["11"], "populacao": 1291771 },
-    { "nome": "Campinas", "uf": "SP", "regiao": "Sudeste", "cepInicio": "13000000", "cepFim": "13139999", "ddds": ["19"], "populacao": 1223237 },
-    { "nome": "São Luís", "uf": "MA", "regiao": "Nordeste", "cepInicio": "65000000", "cepFim": "65099999", "ddds": ["98"], "populacao": 1037775 },
-    { "nome": "Maceió", "uf": "AL", "regiao": "Nordeste", "cepInicio": "57000000", "cepFim": "57099999", "ddds": ["82"], "populacao": 957916 },
-    { "nome": "Campo Grande", "uf": "MS", "regiao": "Centro-Oeste", "cepInicio": "79000000", "cepFim": "79129999", "ddds": ["67"], "populacao": 906092 },
-    { "nome": "Natal", "uf": "RN", "regiao": "Nordeste", "cepInicio": "59000000", "cepFim": "59099999", "ddds": ["84"], "populacao": 751300 },
-    { "nome": "Teresina", "uf": "PI", "regiao": "Nordeste", "cepInicio": "64000000", "cepFim": "64099999", "ddds": ["86"], "populacao": 871126 },
-    { "nome": "São Bernardo do Campo", "uf": "SP", "regiao": "Sudeste", "cepInicio": "09600000", "cepFim": "09899999", "ddds": ["11"], "populacao": 815000 },
-    { "nome": "João Pessoa", "uf": "PB", "regiao": "Nordeste", "cepInicio": "58000000", "cepFim": "58099999", "ddds": ["83"], "populacao": 833932 },
-    { "nome": "Santo André", "uf": "SP", "regiao": "Sudeste", "cepInicio": "09000000", "cepFim": "09299999", "ddds": ["11"], "populacao": 723889 },
-    { "nome": "Osasco", "uf": "SP", "regiao": "Sudeste", "cepInicio": "06000000", "cepFim": "06299999", "ddds": ["11"], "populacao": 699944 },
-    { "nome": "Jaboatão dos Guararapes", "uf": "PE", "regiao": "Nordeste", "cepInicio": "54000000", "cepFim": "54399999", "ddds": ["81"], "populacao": 706867 },
-    { "nome": "Uberlândia", "uf": "MG", "regiao": "Sudeste", "cepInicio": "38400000", "cepFim": "38499999", "ddds": ["34"], "populacao": 706597 },
-    { "nome": "Sorocaba", "uf": "SP", "regiao": "Sudeste", "cepInicio": "18000000", "cepFim": "18109999", "ddds": ["15"], "populacao": 687357 },
-    { "nome": "Ribeirão Preto", "uf": "SP", "regiao": "Sudeste", "cepInicio": "14000000", "cepFim": "14109999", "ddds": ["16"], "populacao": 720116 },
-    { "nome": "Contagem", "uf": "MG", "regiao": "Sudeste", "cepInicio": "32000000", "cepFim": "32399999", "ddds": ["31"], "populacao": 668949 },
-    { "nome": "Aracaju", "uf": "SE", "regiao": "Nordeste", "cepInicio": "49000000", "cepFim": "49099999", "ddds": ["79"], "populacao": 664908 },
-    { "nome": "Feira de Santana", "uf": "BA", "regiao": "Nordeste", "cepInicio": "44000000", "cepFim": "44118999", "ddds": ["75"], "populacao": 619609 },
-    { "nome": "Cuiabá", "uf": "MT", "regiao": "Centro-Oeste", "cepInicio": "78000000", "cepFim": "78099999", "ddds": ["65"], "populacao": 650912 },
-    { "nome": "Joinville", "uf": "SC", "regiao": "Sul", "cepInicio": "89200000", "cepFim": "89239999", "ddds": ["47"], "populacao": 616317 },
-    { "nome": "Juiz de Fora", "uf": "MG", "regiao": "Sudeste", "cepInicio": "36000000", "cepFim": "36099999", "ddds": ["32"], "populacao": 573285 },
-    { "nome": "Londrina", "uf": "PR", "regiao": "Sul", "cepInicio": "86000000", "cepFim": "86099999", "ddds": ["43"], "populacao": 575377 },
-    { "nome": "Niterói", "uf": "RJ", "regiao": "Sudeste", "cepInicio": "24000000", "cepFim": "24399999", "ddds": ["21"], "populacao": 515317 },
-    { "nome": "Florianópolis", "uf": "SC", "regiao": "Sul", "cepInicio": "88000000", "cepFim": "88099999", "ddds": ["48"], "populacao": 508826 },
-    { "nome": "Duque de Caxias", "uf": "RJ", "regiao": "Sudeste", "cepInicio": "25000000", "cepFim": "25289999", "ddds": ["21"], "populacao": 924624 },
-    { "nome": "Santos", "uf": "SP", "regiao": "Sudeste", "cepInicio": "11000000", "cepFim": "11499999", "ddds": ["13"], "populacao": 433656 },
-    { "nome": "Maringá", "uf": "PR", "regiao": "Sul", "cepInicio": "87000000", "cepFim": "87119999", "ddds": ["44"], "populacao": 430157 },
-    { "nome": "Caxias do Sul", "uf": "RS", "regiao": "Sul", "cepInicio": "95000000", "cepFim": "95129999", "ddds": ["54"], "populacao": 463281 },
-    { "nome": "Vitória", "uf": "ES", "regiao": "Sudeste", "cepInicio": "29000000", "cepFim": "29099999", "ddds": ["27"], "populacao": 369534 },
-    { "nome": "Serra", "uf": "ES", "regiao": "Sudeste", "cepInicio": "29160000", "cepFim": "29179999", "ddds": ["27"], "populacao": 527240 },
-    { "nome": "São José dos Campos", "uf": "SP", "regiao": "Sudeste", "cepInicio": "12200000", "cepFim": "12249999", "ddds": ["12"], "populacao": 729737 },
-    { "nome": "Campos dos Goytacazes", "uf": "RJ", "regiao": "Sudeste", "cepInicio": "28000000", "cepFim": "28099999", "ddds": ["22"], "populacao": 511168 },
-    { "nome": "Pelotas", "uf": "RS", "regiao": "Sul", "cepInicio": "96000000", "cepFim": "96099999", "ddds": ["53"], "populacao": 343132 },
-    { "nome": "Anápolis", "uf": "GO", "regiao": "Centro-Oeste", "cepInicio": "75000000", "cepFim": "75199999", "ddds": ["62"], "populacao": 391772 },
-    { "nome": "Porto Velho", "uf": "RO", "regiao": "Norte", "cepInicio": "76800000", "cepFim": "76834999", "ddds": ["69"], "populacao": 548952 },
-    { "nome": "Macapá", "uf": "AP", "regiao": "Norte", "cepInicio": "68900000", "cepFim": "68914999", "ddds": ["96"], "populacao": 522357 },
-    { "nome": "Rio Branco", "uf": "AC", "regiao": "Norte", "cepInicio": "69900000", "cepFim": "69923999", "ddds": ["68"], "populacao": 419452 },
-    { "nome": "Boa Vista", "uf": "RR", "regiao": "Norte", "cepInicio": "69300000", "cepFim": "69339999", "ddds": ["95"], "populacao": 436591 },
-    { "nome": "Palmas", "uf": "TO", "regiao": "Norte", "cepInicio": "77000000", "cepFim": "77270999", "ddds": ["63"], "populacao": 313349 },
-    { "nome": "Caruaru", "uf": "PE", "regiao": "Nordeste", "cepInicio": "55000000", "cepFim": "55049999", "ddds": ["81"], "populacao": 374499 }
+    {
+      "nome": "São Paulo",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "01000000",
+      "cepFim": "05999999",
+      "ddds": ["11"],
+      "populacao": 11451245
+    },
+    {
+      "nome": "Rio de Janeiro",
+      "uf": "RJ",
+      "regiao": "Sudeste",
+      "cepInicio": "20000000",
+      "cepFim": "23799999",
+      "ddds": ["21"],
+      "populacao": 6211423
+    },
+    {
+      "nome": "Brasília",
+      "uf": "DF",
+      "regiao": "Centro-Oeste",
+      "cepInicio": "70000000",
+      "cepFim": "72799999",
+      "ddds": ["61"],
+      "populacao": 2817381
+    },
+    {
+      "nome": "Salvador",
+      "uf": "BA",
+      "regiao": "Nordeste",
+      "cepInicio": "40000000",
+      "cepFim": "42599999",
+      "ddds": ["71"],
+      "populacao": 2417678
+    },
+    {
+      "nome": "Fortaleza",
+      "uf": "CE",
+      "regiao": "Nordeste",
+      "cepInicio": "60000000",
+      "cepFim": "61999999",
+      "ddds": ["85"],
+      "populacao": 2428708
+    },
+    {
+      "nome": "Belo Horizonte",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "cepInicio": "30000000",
+      "cepFim": "31999999",
+      "ddds": ["31"],
+      "populacao": 2315560
+    },
+    {
+      "nome": "Manaus",
+      "uf": "AM",
+      "regiao": "Norte",
+      "cepInicio": "69000000",
+      "cepFim": "69099999",
+      "ddds": ["92"],
+      "populacao": 2063689
+    },
+    {
+      "nome": "Curitiba",
+      "uf": "PR",
+      "regiao": "Sul",
+      "cepInicio": "80000000",
+      "cepFim": "82999999",
+      "ddds": ["41"],
+      "populacao": 1773718
+    },
+    {
+      "nome": "Recife",
+      "uf": "PE",
+      "regiao": "Nordeste",
+      "cepInicio": "50000000",
+      "cepFim": "52999999",
+      "ddds": ["81"],
+      "populacao": 1488920
+    },
+    {
+      "nome": "Goiânia",
+      "uf": "GO",
+      "regiao": "Centro-Oeste",
+      "cepInicio": "74000000",
+      "cepFim": "74899999",
+      "ddds": ["62"],
+      "populacao": 1437366
+    },
+    {
+      "nome": "Porto Alegre",
+      "uf": "RS",
+      "regiao": "Sul",
+      "cepInicio": "90000000",
+      "cepFim": "91999999",
+      "ddds": ["51"],
+      "populacao": 1332570
+    },
+    {
+      "nome": "Belém",
+      "uf": "PA",
+      "regiao": "Norte",
+      "cepInicio": "66000000",
+      "cepFim": "66999999",
+      "ddds": ["91"],
+      "populacao": 1303403
+    },
+    {
+      "nome": "Guarulhos",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "07000000",
+      "cepFim": "07399999",
+      "ddds": ["11"],
+      "populacao": 1291771
+    },
+    {
+      "nome": "Campinas",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "13000000",
+      "cepFim": "13139999",
+      "ddds": ["19"],
+      "populacao": 1223237
+    },
+    {
+      "nome": "São Luís",
+      "uf": "MA",
+      "regiao": "Nordeste",
+      "cepInicio": "65000000",
+      "cepFim": "65099999",
+      "ddds": ["98"],
+      "populacao": 1037775
+    },
+    {
+      "nome": "Maceió",
+      "uf": "AL",
+      "regiao": "Nordeste",
+      "cepInicio": "57000000",
+      "cepFim": "57099999",
+      "ddds": ["82"],
+      "populacao": 957916
+    },
+    {
+      "nome": "Campo Grande",
+      "uf": "MS",
+      "regiao": "Centro-Oeste",
+      "cepInicio": "79000000",
+      "cepFim": "79129999",
+      "ddds": ["67"],
+      "populacao": 906092
+    },
+    {
+      "nome": "Natal",
+      "uf": "RN",
+      "regiao": "Nordeste",
+      "cepInicio": "59000000",
+      "cepFim": "59099999",
+      "ddds": ["84"],
+      "populacao": 751300
+    },
+    {
+      "nome": "Teresina",
+      "uf": "PI",
+      "regiao": "Nordeste",
+      "cepInicio": "64000000",
+      "cepFim": "64099999",
+      "ddds": ["86"],
+      "populacao": 871126
+    },
+    {
+      "nome": "São Bernardo do Campo",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "09600000",
+      "cepFim": "09899999",
+      "ddds": ["11"],
+      "populacao": 815000
+    },
+    {
+      "nome": "João Pessoa",
+      "uf": "PB",
+      "regiao": "Nordeste",
+      "cepInicio": "58000000",
+      "cepFim": "58099999",
+      "ddds": ["83"],
+      "populacao": 833932
+    },
+    {
+      "nome": "Santo André",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "09000000",
+      "cepFim": "09299999",
+      "ddds": ["11"],
+      "populacao": 723889
+    },
+    {
+      "nome": "Osasco",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "06000000",
+      "cepFim": "06299999",
+      "ddds": ["11"],
+      "populacao": 699944
+    },
+    {
+      "nome": "Jaboatão dos Guararapes",
+      "uf": "PE",
+      "regiao": "Nordeste",
+      "cepInicio": "54000000",
+      "cepFim": "54399999",
+      "ddds": ["81"],
+      "populacao": 706867
+    },
+    {
+      "nome": "Uberlândia",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "cepInicio": "38400000",
+      "cepFim": "38499999",
+      "ddds": ["34"],
+      "populacao": 706597
+    },
+    {
+      "nome": "Sorocaba",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "18000000",
+      "cepFim": "18109999",
+      "ddds": ["15"],
+      "populacao": 687357
+    },
+    {
+      "nome": "Ribeirão Preto",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "14000000",
+      "cepFim": "14109999",
+      "ddds": ["16"],
+      "populacao": 720116
+    },
+    {
+      "nome": "Contagem",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "cepInicio": "32000000",
+      "cepFim": "32399999",
+      "ddds": ["31"],
+      "populacao": 668949
+    },
+    {
+      "nome": "Aracaju",
+      "uf": "SE",
+      "regiao": "Nordeste",
+      "cepInicio": "49000000",
+      "cepFim": "49099999",
+      "ddds": ["79"],
+      "populacao": 664908
+    },
+    {
+      "nome": "Feira de Santana",
+      "uf": "BA",
+      "regiao": "Nordeste",
+      "cepInicio": "44000000",
+      "cepFim": "44118999",
+      "ddds": ["75"],
+      "populacao": 619609
+    },
+    {
+      "nome": "Cuiabá",
+      "uf": "MT",
+      "regiao": "Centro-Oeste",
+      "cepInicio": "78000000",
+      "cepFim": "78099999",
+      "ddds": ["65"],
+      "populacao": 650912
+    },
+    {
+      "nome": "Joinville",
+      "uf": "SC",
+      "regiao": "Sul",
+      "cepInicio": "89200000",
+      "cepFim": "89239999",
+      "ddds": ["47"],
+      "populacao": 616317
+    },
+    {
+      "nome": "Juiz de Fora",
+      "uf": "MG",
+      "regiao": "Sudeste",
+      "cepInicio": "36000000",
+      "cepFim": "36099999",
+      "ddds": ["32"],
+      "populacao": 573285
+    },
+    {
+      "nome": "Londrina",
+      "uf": "PR",
+      "regiao": "Sul",
+      "cepInicio": "86000000",
+      "cepFim": "86099999",
+      "ddds": ["43"],
+      "populacao": 575377
+    },
+    {
+      "nome": "Niterói",
+      "uf": "RJ",
+      "regiao": "Sudeste",
+      "cepInicio": "24000000",
+      "cepFim": "24399999",
+      "ddds": ["21"],
+      "populacao": 515317
+    },
+    {
+      "nome": "Florianópolis",
+      "uf": "SC",
+      "regiao": "Sul",
+      "cepInicio": "88000000",
+      "cepFim": "88099999",
+      "ddds": ["48"],
+      "populacao": 508826
+    },
+    {
+      "nome": "Duque de Caxias",
+      "uf": "RJ",
+      "regiao": "Sudeste",
+      "cepInicio": "25000000",
+      "cepFim": "25289999",
+      "ddds": ["21"],
+      "populacao": 924624
+    },
+    {
+      "nome": "Santos",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "11000000",
+      "cepFim": "11499999",
+      "ddds": ["13"],
+      "populacao": 433656
+    },
+    {
+      "nome": "Maringá",
+      "uf": "PR",
+      "regiao": "Sul",
+      "cepInicio": "87000000",
+      "cepFim": "87119999",
+      "ddds": ["44"],
+      "populacao": 430157
+    },
+    {
+      "nome": "Caxias do Sul",
+      "uf": "RS",
+      "regiao": "Sul",
+      "cepInicio": "95000000",
+      "cepFim": "95129999",
+      "ddds": ["54"],
+      "populacao": 463281
+    },
+    {
+      "nome": "Vitória",
+      "uf": "ES",
+      "regiao": "Sudeste",
+      "cepInicio": "29000000",
+      "cepFim": "29099999",
+      "ddds": ["27"],
+      "populacao": 369534
+    },
+    {
+      "nome": "Serra",
+      "uf": "ES",
+      "regiao": "Sudeste",
+      "cepInicio": "29160000",
+      "cepFim": "29179999",
+      "ddds": ["27"],
+      "populacao": 527240
+    },
+    {
+      "nome": "São José dos Campos",
+      "uf": "SP",
+      "regiao": "Sudeste",
+      "cepInicio": "12200000",
+      "cepFim": "12249999",
+      "ddds": ["12"],
+      "populacao": 729737
+    },
+    {
+      "nome": "Campos dos Goytacazes",
+      "uf": "RJ",
+      "regiao": "Sudeste",
+      "cepInicio": "28000000",
+      "cepFim": "28099999",
+      "ddds": ["22"],
+      "populacao": 511168
+    },
+    {
+      "nome": "Pelotas",
+      "uf": "RS",
+      "regiao": "Sul",
+      "cepInicio": "96000000",
+      "cepFim": "96099999",
+      "ddds": ["53"],
+      "populacao": 343132
+    },
+    {
+      "nome": "Anápolis",
+      "uf": "GO",
+      "regiao": "Centro-Oeste",
+      "cepInicio": "75000000",
+      "cepFim": "75199999",
+      "ddds": ["62"],
+      "populacao": 391772
+    },
+    {
+      "nome": "Porto Velho",
+      "uf": "RO",
+      "regiao": "Norte",
+      "cepInicio": "76800000",
+      "cepFim": "76834999",
+      "ddds": ["69"],
+      "populacao": 548952
+    },
+    {
+      "nome": "Macapá",
+      "uf": "AP",
+      "regiao": "Norte",
+      "cepInicio": "68900000",
+      "cepFim": "68914999",
+      "ddds": ["96"],
+      "populacao": 522357
+    },
+    {
+      "nome": "Rio Branco",
+      "uf": "AC",
+      "regiao": "Norte",
+      "cepInicio": "69900000",
+      "cepFim": "69923999",
+      "ddds": ["68"],
+      "populacao": 419452
+    },
+    {
+      "nome": "Boa Vista",
+      "uf": "RR",
+      "regiao": "Norte",
+      "cepInicio": "69300000",
+      "cepFim": "69339999",
+      "ddds": ["95"],
+      "populacao": 436591
+    },
+    {
+      "nome": "Palmas",
+      "uf": "TO",
+      "regiao": "Norte",
+      "cepInicio": "77000000",
+      "cepFim": "77270999",
+      "ddds": ["63"],
+      "populacao": 313349
+    },
+    {
+      "nome": "Caruaru",
+      "uf": "PE",
+      "regiao": "Nordeste",
+      "cepInicio": "55000000",
+      "cepFim": "55049999",
+      "ddds": ["81"],
+      "populacao": 374499
+    }
   ]
 }

@@ -4,8 +4,7 @@ import { apenasDigitos } from '../../src/engine/mascara.js';
 import { createRng } from '../../src/engine/prng.js';
 import { gerarEndereco } from '../../src/generators/endereco.js';
 
-const municipioDe = (nome: string) =>
-  municipios.find((m) => m.nome === nome)!;
+const municipioDe = (nome: string) => municipios.find((m) => m.nome === nome)!;
 
 describe('gerarEndereco', () => {
   it('is deterministic for a given seed', () => {

@@ -49,5 +49,7 @@ export function gerarTelefoneEstruturado(
 /** Generate a phone number as a string (bare digits, or masked). */
 export function gerarTelefone(rng: Rng, opcoes: OpcoesTelefone = {}): string {
   const tel = gerarTelefoneEstruturado(rng, opcoes);
-  return opcoes.mascara ? tel.formatado : apenasDigitos(`${tel.ddd}${tel.numero}`);
+  return opcoes.mascara
+    ? tel.formatado
+    : apenasDigitos(`${tel.ddd}${tel.numero}`);
 }

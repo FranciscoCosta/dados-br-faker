@@ -61,8 +61,9 @@ export function gerarCnpj(rng: Rng, opcoes: OpcoesCnpj = {}): string {
 
   let base: string;
   if (alfanumerico) {
-    base = Array.from({ length: 12 }, () =>
-      ALFANUMERICO[rng.int(0, ALFANUMERICO.length - 1)],
+    base = Array.from(
+      { length: 12 },
+      () => ALFANUMERICO[rng.int(0, ALFANUMERICO.length - 1)],
     ).join('');
   } else {
     // Numeric matriz: 8-digit root + '0001' branch.

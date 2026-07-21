@@ -16,11 +16,7 @@ export interface FiltroMunicipio {
 
 /** Normalize a city name for tolerant comparison (case/accent-insensitive). */
 function normalizar(texto: string): string {
-  return texto
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
-    .trim();
+  return texto.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 }
 
 /** Select a municipality matching the filter, weighted by population. */

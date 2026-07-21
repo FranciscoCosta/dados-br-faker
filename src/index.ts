@@ -41,26 +41,48 @@ export { createFaker } from './faker.js';
 export type { Faker, OpcoesFaker } from './faker.js';
 
 // --- Standalone generators (always random) ---------------------------------
+
+/** Generate a random valid CPF. Use {@link createFaker} for deterministic output. */
 export const cpf = (opcoes?: OpcoesCpf): string =>
   gerarCpf(createRandomRng(), opcoes);
+
+/** Generate a random valid CNPJ (numeric or `formato: 'alfanumerico'`). */
 export const cnpj = (opcoes?: OpcoesCnpj): string =>
   gerarCnpj(createRandomRng(), opcoes);
+
+/** Generate a random RG (São Paulo format; illustrative, not official). */
 export const rg = (opcoes?: OpcoesRg): string =>
   gerarRg(createRandomRng(), opcoes);
+
+/** Generate a random CEP inside a real municipality's range. */
 export const cep = (opcoes?: OpcoesCep): string =>
   gerarCep(createRandomRng(), opcoes);
+
+/** Generate a random phone number (mobile by default). */
 export const telefone = (opcoes?: OpcoesTelefone): string =>
   gerarTelefone(createRandomRng(), opcoes);
+
+/** Generate a random full name from the weighted datasets. */
 export const nome = (opcoes?: OpcoesNome): string =>
   gerarNome(createRandomRng(), opcoes);
+
+/** Generate a random email, derived from a name when provided. */
 export const email = (opcoes?: OpcoesEmail): string =>
   gerarEmail(createRandomRng(), opcoes);
+
+/** Generate a coherent random address (CEP within the city's range). */
 export const endereco = (opcoes?: OpcoesEndereco): Endereco =>
   gerarEndereco(createRandomRng(), opcoes);
+
+/** Generate a coherent random person (DDD↔city, age↔birth date, email↔name). */
 export const pessoa = (opcoes?: OpcoesPessoa): Pessoa =>
   gerarPessoa(createRandomRng(), opcoes);
+
+/** Generate a coherent random company (IE↔UF, DDD↔city). */
 export const empresa = (opcoes?: OpcoesEmpresa): Empresa =>
   gerarEmpresa(createRandomRng(), opcoes);
+
+/** Generate a valid Inscrição Estadual for a given UF. */
 export const inscricaoEstadual = (uf: UF): string =>
   gerarInscricaoEstadual(createRandomRng(), uf);
 
