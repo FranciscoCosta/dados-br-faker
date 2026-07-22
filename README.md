@@ -1,6 +1,6 @@
 # dados-br-faker
 
-> Modern, TypeScript-first generator of **coherent** Brazilian fake data — the CEP belongs to the city, the city to the state, the phone's DDD to the region, the age to the birth date. Valid check digits, deterministic seeding, real tree-shaking, and first-class support for the **2026 alphanumeric CNPJ**.
+> Modern, TypeScript-first generator of **coherent** Brazilian fake data: the CEP belongs to the city, the city to the state, the phone's DDD to the region, the age to the birth date. Valid check digits, deterministic seeding, real tree-shaking, and first-class support for the **2026 alphanumeric CNPJ**.
 
 [![npm version](https://img.shields.io/npm/v/dados-br-faker.svg)](https://www.npmjs.com/package/dados-br-faker)
 [![CI](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml/badge.svg)](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml)
@@ -54,12 +54,12 @@ Requires Node ≥ 18. Ships ESM + CJS + type declarations. **Zero runtime depend
 ## Two ways to use it
 
 ```ts
-// 1) Deterministic instance — reproducible from a seed
+// 1) Deterministic instance, reproducible from a seed
 import { createFaker } from 'dados-br-faker';
 const faker = createFaker({ seed: 42 });
 faker.cpf(); // same value every run for this seed/position
 
-// 2) Standalone tree-shakeable functions — always random
+// 2) Standalone tree-shakeable functions, always random
 import { cpf, pessoa } from 'dados-br-faker';
 cpf(); // random each call
 ```
@@ -81,7 +81,7 @@ To the best of our knowledge, as of July 2026:
 | Zero runtime deps                      |         ✅         |    ✅    |         ⚠️          |           ✅            |
 | Actively maintained                    |         ✅         |    ❌    |         ⚠️          |           ✅            |
 
-`@faker-js/faker` is an excellent, general-purpose library — its Brazilian locale simply generates **isolated** fields and does not aim for cross-field coherence or valid Brazilian documents. `dados-br-faker` is narrower and opinionated: coherence and correct documents are the whole point.
+`@faker-js/faker` is an excellent, general-purpose library; its Brazilian locale simply generates **isolated** fields and does not aim for cross-field coherence or valid Brazilian documents. `dados-br-faker` is narrower and opinionated: coherence and correct documents are the whole point.
 
 ## The alphanumeric CNPJ (IN RFB nº 2.229/2024)
 
@@ -93,11 +93,11 @@ faker.cnpj({ mascara: true }); // '11.222.333/0001-81'
 faker.cnpj({ formato: 'alfanumerico' }); // '12ABC34501DE35'
 faker.cnpj({ formato: 'alfanumerico', mascara: true }); // '12.ABC.345/01DE-35'
 
-validarCnpj('12.ABC.345/01DE-35'); // true — validates both formats, with or without mask
+validarCnpj('12.ABC.345/01DE-35'); // true (validates both formats, with or without mask)
 ```
 
-- Positions 1–8 (root) and 9–12 (branch) may be letters `A–Z` or digits; positions 13–14 (check digits) are always numeric.
-- Check digits use modulo 11 with weights 2–9, converting each character by its ASCII value minus 48 (`'0'`–`'9'` → 0–9; `'A'` → 17 … `'Z'` → 42).
+- Positions 1-8 (root) and 9-12 (branch) may be letters `A-Z` or digits; positions 13-14 (check digits) are always numeric.
+- Check digits use modulo 11 with weights 2-9, converting each character by its ASCII value minus 48 (`'0'`-`'9'` → 0-9; `'A'` → 17 … `'Z'` → 42).
 
 ## API
 
@@ -146,15 +146,15 @@ faker.endereco({ cidade: 'Curitiba' });
 faker.empresa({ uf: 'RS', cnpjFormato: 'alfanumerico' });
 ```
 
-> Companies opened from July 2026 onward would use the alphanumeric CNPJ in real life — pass `cnpjFormato: 'alfanumerico'` to seed realistic newly-registered companies.
+> Companies opened from July 2026 onward would use the alphanumeric CNPJ in real life, so pass `cnpjFormato: 'alfanumerico'` to seed realistic newly-registered companies.
 
 Returned shapes: [`Endereco`](./src/types.ts), [`Pessoa`](./src/types.ts), [`Empresa`](./src/types.ts), [`Telefone`](./src/types.ts).
 
 ### Vehicles & banking
 
 ```ts
-faker.placa(); // 'ABC1D23' (Mercosul) — or { formato: 'antiga' } → 'ABC-1234'
-faker.renavam(); // '54088307874' — valid DENATRAN check digit
+faker.placa(); // 'ABC1D23' (Mercosul), or { formato: 'antiga' } → 'ABC-1234'
+faker.renavam(); // '54088307874', valid DENATRAN check digit
 faker.veiculo(); // { marca, modelo, ano, cor, placa, renavam }
 
 faker.chavePix(); // random UUID v4 (EVP key)
@@ -261,7 +261,7 @@ Runnable versions live in [`examples/`](./examples).
 ## Data & honesty
 
 - **Documents** (CPF, CNPJ, IE-SP) have correct check digits, verified against known vectors and 1000+ property-tested samples.
-- **Municipalities**: the 160 most populous cities, covering all 27 federative units — names, UF, region, and population from **IBGE** (2025 estimates), area codes from the `municipios-brasileiros` dataset, and **real Correios CEP ranges** per city.
+- **Municipalities**: the 160 most populous cities, covering all 27 federative units, with names, UF, region, and population from **IBGE** (2025 estimates), area codes from the `municipios-brasileiros` dataset, and **real Correios CEP ranges** per city.
 - **Names**: weighted by the **IBGE _Nomes no Brasil_** national frequency ranking (accented forms curated), plus a tail of modern given names.
 - **RG** uses the São Paulo format; it is illustrative, not an official record. Brazil has no single national RG algorithm.
 - **Inscrição Estadual**: **SP, RJ, and PR** follow their official SEFAZ algorithms (verified against real vectors); **AM, ES, PB, PI, RS, SC, SE** use the plain modulo-11 rule that is their official algorithm too. The remaining states use a self-consistent generic scheme sized to the state's IE length. These values are for coherent fixtures, not tax submission.
