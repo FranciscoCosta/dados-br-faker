@@ -1,5 +1,14 @@
 # dados-br-faker
 
+## 0.3.3
+
+### Patch Changes
+
+- Add a terminal demo GIF to the README, showing coherent output, deterministic
+  seeding, valid check digits, and the 2026 alphanumeric CNPJ. The image is served
+  from GitHub via an absolute URL, so it renders on npmjs.com without shipping in
+  the package tarball.
+
 ## 0.3.2
 
 ### Patch Changes

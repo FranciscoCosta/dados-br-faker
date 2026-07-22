@@ -11,6 +11,8 @@
 
 🇧🇷 [Leia em português](https://github.com/FranciscoCosta/dados-br-faker/blob/main/docs/README.pt-BR.md)
 
+![dados-br-faker in action](https://raw.githubusercontent.com/FranciscoCosta/dados-br-faker/main/docs/demo.gif)
+
 ## Why another Brazilian faker?
 
 Existing libraries generate **isolated, incoherent** fields: a CEP from Curitiba next to a city in Manaus with a São Paulo DDD. For test fixtures, seeds, and demos that actually look real, incoherence is a bug.

@@ -45,7 +45,7 @@ import type { Boleto, OpcoesBoleto } from './generators/boleto.js';
 import type { Endereco, Empresa, Pessoa, UF } from './types.js';
 
 /** Library version, kept in sync with package.json at release time. */
-export const version = '0.3.2';
+export const version = '0.3.3';
 
 // --- Seeded instance -------------------------------------------------------
 export { createFaker } from './faker.js';
