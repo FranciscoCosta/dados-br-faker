@@ -1,5 +1,17 @@
 # dados-br-faker
 
+## 0.3.1
+
+### Patch Changes
+
+- Fix package metadata and README links on npmjs.com.
+
+  - Add `repository`, `homepage`, and `bugs` fields so the npm page links back to
+    the GitHub repo and issue tracker.
+  - Convert relative README links (`./README.pt-BR.md`, `./LICENSE`, `./examples`,
+    `./src/types.ts`) to absolute GitHub URLs. Relative links resolve against
+    `npmjs.com/package/...` and returned 404 on the package page.
+
 ## 0.3.0
 
 ### Minor Changes

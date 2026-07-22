@@ -6,10 +6,10 @@
 [![CI](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml/badge.svg)](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/dados-br-faker)](https://bundlephobia.com/package/dados-br-faker)
 [![types](https://img.shields.io/npm/types/dados-br-faker.svg)](https://www.npmjs.com/package/dados-br-faker)
-[![license](https://img.shields.io/npm/l/dados-br-faker.svg)](./LICENSE)
-[![zero deps](https://img.shields.io/badge/runtime%20deps-0-brightgreen.svg)](./package.json)
+[![license](https://img.shields.io/npm/l/dados-br-faker.svg)](https://github.com/FranciscoCosta/dados-br-faker/blob/main/LICENSE)
+[![zero deps](https://img.shields.io/badge/runtime%20deps-0-brightgreen.svg)](https://github.com/FranciscoCosta/dados-br-faker/blob/main/package.json)
 
-🇺🇸 [Read in English](./README.md)
+🇺🇸 [Read in English](https://github.com/FranciscoCosta/dados-br-faker/blob/main/README.md)
 
 ## Por que mais um faker brasileiro?
 
@@ -148,7 +148,7 @@ faker.empresa({ uf: 'RS', cnpjFormato: 'alfanumerico' });
 
 > Empresas abertas a partir de julho/2026 usariam o CNPJ alfanumérico na vida real, então passe `cnpjFormato: 'alfanumerico'` para seeds realistas de empresas recém-abertas.
 
-Formatos de retorno: [`Endereco`](./src/types.ts), [`Pessoa`](./src/types.ts), [`Empresa`](./src/types.ts), [`Telefone`](./src/types.ts).
+Formatos de retorno: [`Endereco`](https://github.com/FranciscoCosta/dados-br-faker/blob/main/src/types.ts), [`Pessoa`](https://github.com/FranciscoCosta/dados-br-faker/blob/main/src/types.ts), [`Empresa`](https://github.com/FranciscoCosta/dados-br-faker/blob/main/src/types.ts), [`Telefone`](https://github.com/FranciscoCosta/dados-br-faker/blob/main/src/types.ts).
 
 ### Veículos & bancário
 
@@ -256,7 +256,7 @@ export const Default = {
 };
 ```
 
-Versões executáveis estão em [`examples/`](./examples).
+Versões executáveis estão em [`examples/`](https://github.com/FranciscoCosta/dados-br-faker/tree/main/examples).
 
 ## Dados & honestidade
 
@@ -268,4 +268,4 @@ Versões executáveis estão em [`examples/`](./examples).
 
 ## Licença
 
-[MIT](./LICENSE)
+[MIT](https://github.com/FranciscoCosta/dados-br-faker/blob/main/LICENSE)

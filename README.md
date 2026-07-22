@@ -6,10 +6,10 @@
 [![CI](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml/badge.svg)](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/dados-br-faker)](https://bundlephobia.com/package/dados-br-faker)
 [![types](https://img.shields.io/npm/types/dados-br-faker.svg)](https://www.npmjs.com/package/dados-br-faker)
-[![license](https://img.shields.io/npm/l/dados-br-faker.svg)](./LICENSE)
-[![zero deps](https://img.shields.io/badge/runtime%20deps-0-brightgreen.svg)](./package.json)
+[![license](https://img.shields.io/npm/l/dados-br-faker.svg)](https://github.com/FranciscoCosta/dados-br-faker/blob/main/LICENSE)
+[![zero deps](https://img.shields.io/badge/runtime%20deps-0-brightgreen.svg)](https://github.com/FranciscoCosta/dados-br-faker/blob/main/package.json)
 
-🇧🇷 [Leia em português](./README.pt-BR.md)
+🇧🇷 [Leia em português](https://github.com/FranciscoCosta/dados-br-faker/blob/main/README.pt-BR.md)
 
 ## Why another Brazilian faker?
 
@@ -148,7 +148,7 @@ faker.empresa({ uf: 'RS', cnpjFormato: 'alfanumerico' });
 
 > Companies opened from July 2026 onward would use the alphanumeric CNPJ in real life, so pass `cnpjFormato: 'alfanumerico'` to seed realistic newly-registered companies.
 
-Returned shapes: [`Endereco`](./src/types.ts), [`Pessoa`](./src/types.ts), [`Empresa`](./src/types.ts), [`Telefone`](./src/types.ts).
+Returned shapes: [`Endereco`](https://github.com/FranciscoCosta/dados-br-faker/blob/main/src/types.ts), [`Pessoa`](https://github.com/FranciscoCosta/dados-br-faker/blob/main/src/types.ts), [`Empresa`](https://github.com/FranciscoCosta/dados-br-faker/blob/main/src/types.ts), [`Telefone`](https://github.com/FranciscoCosta/dados-br-faker/blob/main/src/types.ts).
 
 ### Vehicles & banking
 
@@ -256,7 +256,7 @@ export const Default = {
 };
 ```
 
-Runnable versions live in [`examples/`](./examples).
+Runnable versions live in [`examples/`](https://github.com/FranciscoCosta/dados-br-faker/tree/main/examples).
 
 ## Data & honesty
 
@@ -268,4 +268,4 @@ Runnable versions live in [`examples/`](./examples).
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](https://github.com/FranciscoCosta/dados-br-faker/blob/main/LICENSE)
