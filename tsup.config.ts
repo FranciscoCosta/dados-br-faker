@@ -6,7 +6,9 @@ export default defineConfig({
   dts: true,
   clean: true,
   minify: false,
-  sourcemap: true,
+  // Sourcemaps are omitted from the published package to keep it lean; tests and
+  // debugging run against src/, not dist/.
+  sourcemap: false,
   treeshake: true,
   splitting: false,
   target: 'es2021',
