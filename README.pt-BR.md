@@ -159,9 +159,10 @@ faker.veiculo(); // { marca, modelo, ano, cor, placa, renavam }
 faker.chavePix(); // UUID v4 aleatória (chave EVP)
 faker.chavePix({ tipo: 'telefone' }); // '+5511987654321'  (também 'cpf' | 'email')
 faker.contaBancaria(); // { banco, codigoBanco, agencia, conta }
+faker.boleto({ valor: 150.75 }); // { banco, valor, codigoBarras, linhaDigitavel }
 ```
 
-Os códigos COMPE dos bancos são reais; o DV da conta é um esquema genérico documentado (as regras por banco não são padronizadas). O DV do RENAVAM é validável por `validarRenavam`.
+Os códigos COMPE dos bancos são reais; o DV da conta é um esquema genérico documentado (as regras por banco não são padronizadas). Os DVs do RENAVAM e do boleto são validáveis por `validarRenavam` e `validarLinhaDigitavel` (o algoritmo do boleto segue a FEBRABAN, verificado contra boletos reais).
 
 ### Validadores
 
@@ -171,12 +172,14 @@ import {
   validarCnpj,
   validarInscricaoEstadual,
   validarRenavam,
+  validarLinhaDigitavel,
 } from 'dados-br-faker';
 
 validarCpf('529.982.247-25'); // true (com ou sem máscara)
 validarCnpj('12ABC34501DE35'); // true (numérico ou alfanumérico)
 validarInscricaoEstadual('110042490114', 'SP'); // true
 validarRenavam('54088307874'); // true
+validarLinhaDigitavel('10492006506100010004200997263900989810000021403'); // true
 ```
 
 ## Receitas
