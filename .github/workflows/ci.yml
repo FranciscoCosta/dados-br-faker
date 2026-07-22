@@ -28,16 +28,8 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      # Cache the pnpm store with a per-node-version key. Using setup-node's
-      # built-in `cache: pnpm` shares one key across the matrix, which can race
-      # when parallel jobs restore/save it concurrently.
-      - name: Cache pnpm store
-        uses: actions/cache@v4
-        with:
-          path: ~/.local/share/pnpm/store
-          key: pnpm-store-node${{ matrix.node }}-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: pnpm-store-node${{ matrix.node }}-
-
+      # No pnpm-store caching: the install is ~1s and store caching across the
+      # parallel matrix was the source of Node 20 job failures.
       - name: Install
         run: pnpm install --frozen-lockfile
 
