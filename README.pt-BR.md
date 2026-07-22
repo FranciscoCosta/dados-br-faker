@@ -264,7 +264,7 @@ Versões executáveis estão em [`examples/`](./examples).
 - **Municípios**: as 160 cidades mais populosas, cobrindo as 27 unidades federativas — nome, UF, região e população do **IBGE** (estimativas 2025), DDD do dataset `municipios-brasileiros` e **faixas de CEP reais dos Correios** por cidade.
 - **Nomes**: ponderados pelo ranking de frequência nacional do **IBGE _Nomes no Brasil_** (formas acentuadas curadas), com uma cauda de nomes modernos.
 - **RG** usa o formato de São Paulo; é ilustrativo, não um registro oficial. O Brasil não tem algoritmo nacional único de RG.
-- **Inscrição Estadual**: São Paulo segue o algoritmo oficial da SEFAZ; as demais UFs usam um esquema genérico auto-consistente dimensionado ao comprimento da IE do estado (documentado no código). Esses valores servem para fixtures coerentes, não para envio a órgãos fazendários.
+- **Inscrição Estadual**: **SP, RJ e PR** seguem os algoritmos oficiais da SEFAZ (verificados contra vetores reais); **AM, ES, PB, PI, RS, SC, SE** usam a regra de módulo 11 simples, que é também o algoritmo oficial deles. As demais UFs usam um esquema genérico auto-consistente dimensionado ao comprimento da IE do estado. Esses valores servem para fixtures coerentes, não para envio a órgãos fazendários.
 
 ## Licença
 

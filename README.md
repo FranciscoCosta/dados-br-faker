@@ -264,7 +264,7 @@ Runnable versions live in [`examples/`](./examples).
 - **Municipalities**: the 160 most populous cities, covering all 27 federative units — names, UF, region, and population from **IBGE** (2025 estimates), area codes from the `municipios-brasileiros` dataset, and **real Correios CEP ranges** per city.
 - **Names**: weighted by the **IBGE _Nomes no Brasil_** national frequency ranking (accented forms curated), plus a tail of modern given names.
 - **RG** uses the São Paulo format; it is illustrative, not an official record. Brazil has no single national RG algorithm.
-- **Inscrição Estadual**: São Paulo follows the official SEFAZ algorithm; other states use a self-consistent generic scheme sized to the state's IE length (documented in the source). These values are for coherent fixtures, not tax submission.
+- **Inscrição Estadual**: **SP, RJ, and PR** follow their official SEFAZ algorithms (verified against real vectors); **AM, ES, PB, PI, RS, SC, SE** use the plain modulo-11 rule that is their official algorithm too. The remaining states use a self-consistent generic scheme sized to the state's IE length. These values are for coherent fixtures, not tax submission.
 
 ## License
 

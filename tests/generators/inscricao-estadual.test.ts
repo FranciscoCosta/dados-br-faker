@@ -52,6 +52,33 @@ describe('validarInscricaoEstadual — SP (official algorithm)', () => {
   });
 });
 
+describe('validarInscricaoEstadual — RJ & PR (official algorithms)', () => {
+  it('accepts known-valid RJ IEs (verified against gammasoft/ie)', () => {
+    for (const ie of ['78527323', '78368870', '10.008.689', '82.879.781']) {
+      expect(validarInscricaoEstadual(ie, 'RJ')).toBe(true);
+    }
+  });
+
+  it('accepts known-valid PR IEs', () => {
+    for (const ie of ['123.45678-50', '9035949183', '90.115.154-76']) {
+      expect(validarInscricaoEstadual(ie, 'PR')).toBe(true);
+    }
+  });
+
+  it('rejects wrong check digits for RJ and PR', () => {
+    expect(validarInscricaoEstadual('78527324', 'RJ')).toBe(false);
+    expect(validarInscricaoEstadual('1234567851', 'PR')).toBe(false);
+  });
+});
+
+describe('validarInscricaoEstadual — trivial-rule states', () => {
+  it('accepts known-valid IEs for PI, PB, SE (official = generic mod-11)', () => {
+    expect(validarInscricaoEstadual('012345679', 'PI')).toBe(true);
+    expect(validarInscricaoEstadual('06000001-5', 'PB')).toBe(true);
+    expect(validarInscricaoEstadual('27123456-3', 'SE')).toBe(true);
+  });
+});
+
 describe('gerarInscricaoEstadual', () => {
   it('is deterministic for a given seed', () => {
     expect(gerarInscricaoEstadual(createRng(1), 'SP')).toBe(
