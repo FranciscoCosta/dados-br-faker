@@ -26,6 +26,7 @@ import {
   gerarVeiculo,
 } from './generators/veiculo.js';
 import { gerarChavePix, gerarContaBancaria } from './generators/banco.js';
+import { gerarBoleto } from './generators/boleto.js';
 
 import type { OpcoesCep } from './generators/cep.js';
 import type { OpcoesCnpj } from './generators/cnpj.js';
@@ -39,6 +40,7 @@ import type { OpcoesRg } from './generators/rg.js';
 import type { OpcoesTelefone } from './generators/telefone.js';
 import type { OpcoesPlaca, Veiculo } from './generators/veiculo.js';
 import type { ContaBancaria, OpcoesChavePix } from './generators/banco.js';
+import type { Boleto, OpcoesBoleto } from './generators/boleto.js';
 import type { Endereco, Empresa, Pessoa, UF } from './types.js';
 
 /** Library version, kept in sync with package.json at release time. */
@@ -113,11 +115,16 @@ export const chavePix = (opcoes?: OpcoesChavePix): string =>
 export const contaBancaria = (): ContaBancaria =>
   gerarContaBancaria(createRandomRng());
 
+/** Generate a random boleto with a valid barcode and linha digitável. */
+export const boleto = (opcoes?: OpcoesBoleto): Boleto =>
+  gerarBoleto(createRandomRng(), opcoes);
+
 // --- Validators ------------------------------------------------------------
 export { validarCpf } from './generators/cpf.js';
 export { validarCnpj } from './generators/cnpj.js';
 export { validarInscricaoEstadual } from './generators/inscricao-estadual.js';
 export { validarRenavam } from './generators/veiculo.js';
+export { validarLinhaDigitavel } from './generators/boleto.js';
 
 // --- Types -----------------------------------------------------------------
 export type {
@@ -149,3 +156,4 @@ export type {
   TipoChavePix,
   ContaBancaria,
 } from './generators/banco.js';
+export type { OpcoesBoleto, Boleto } from './generators/boleto.js';

@@ -4,6 +4,8 @@ import { createRandomRng, createRng } from './engine/prng.js';
 import type { Rng } from './engine/prng.js';
 import type { ContaBancaria, OpcoesChavePix } from './generators/banco.js';
 import { gerarChavePix, gerarContaBancaria } from './generators/banco.js';
+import type { Boleto, OpcoesBoleto } from './generators/boleto.js';
+import { gerarBoleto } from './generators/boleto.js';
 import type { Endereco, Empresa, Pessoa } from './types.js';
 import type { OpcoesCep } from './generators/cep.js';
 import { gerarCep } from './generators/cep.js';
@@ -55,6 +57,7 @@ export interface Faker {
   veiculo(opcoes?: OpcoesPlaca): Veiculo;
   chavePix(opcoes?: OpcoesChavePix): string;
   contaBancaria(): ContaBancaria;
+  boleto(opcoes?: OpcoesBoleto): Boleto;
   /** Re-seed the stream, resetting the sequence deterministically. */
   seed(valor: number): void;
 }
@@ -80,6 +83,7 @@ export function createFaker(opcoes: OpcoesFaker = {}): Faker {
     veiculo: (o) => gerarVeiculo(rng, o),
     chavePix: (o) => gerarChavePix(rng, o),
     contaBancaria: () => gerarContaBancaria(rng),
+    boleto: (o) => gerarBoleto(rng, o),
     seed: (valor) => {
       rng = createRng(valor);
     },

@@ -18,6 +18,7 @@ const METODOS = [
   'veiculo',
   'chavePix',
   'contaBancaria',
+  'boleto',
 ] as const;
 
 describe('createFaker determinism', () => {
