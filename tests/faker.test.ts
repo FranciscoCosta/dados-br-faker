@@ -6,6 +6,7 @@ const METODOS = [
   'cpf',
   'cnpj',
   'rg',
+  'cnh',
   'cep',
   'telefone',
   'nome',

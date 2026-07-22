@@ -6,6 +6,7 @@ import type { ContaBancaria, OpcoesChavePix } from './generators/banco.js';
 import { gerarChavePix, gerarContaBancaria } from './generators/banco.js';
 import type { Boleto, OpcoesBoleto } from './generators/boleto.js';
 import { gerarBoleto } from './generators/boleto.js';
+import { gerarCnh } from './generators/cnh.js';
 import type { Endereco, Empresa, Pessoa } from './types.js';
 import type { OpcoesCep } from './generators/cep.js';
 import { gerarCep } from './generators/cep.js';
@@ -45,6 +46,7 @@ export interface Faker {
   cpf(opcoes?: OpcoesCpf): string;
   cnpj(opcoes?: OpcoesCnpj): string;
   rg(opcoes?: OpcoesRg): string;
+  cnh(): string;
   cep(opcoes?: OpcoesCep): string;
   telefone(opcoes?: OpcoesTelefone): string;
   nome(opcoes?: OpcoesNome): string;
@@ -71,6 +73,7 @@ export function createFaker(opcoes: OpcoesFaker = {}): Faker {
     cpf: (o) => gerarCpf(rng, o),
     cnpj: (o) => gerarCnpj(rng, o),
     rg: (o) => gerarRg(rng, o),
+    cnh: () => gerarCnh(rng),
     cep: (o) => gerarCep(rng, o),
     telefone: (o) => gerarTelefone(rng, o),
     nome: (o) => gerarNome(rng, o),

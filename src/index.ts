@@ -27,6 +27,7 @@ import {
 } from './generators/veiculo.js';
 import { gerarChavePix, gerarContaBancaria } from './generators/banco.js';
 import { gerarBoleto } from './generators/boleto.js';
+import { gerarCnh } from './generators/cnh.js';
 
 import type { OpcoesCep } from './generators/cep.js';
 import type { OpcoesCnpj } from './generators/cnpj.js';
@@ -63,6 +64,9 @@ export const cnpj = (opcoes?: OpcoesCnpj): string =>
 /** Generate a random RG (São Paulo format; illustrative, not official). */
 export const rg = (opcoes?: OpcoesRg): string =>
   gerarRg(createRandomRng(), opcoes);
+
+/** Generate a random valid CNH number. */
+export const cnh = (): string => gerarCnh(createRandomRng());
 
 /** Generate a random CEP inside a real municipality's range. */
 export const cep = (opcoes?: OpcoesCep): string =>
@@ -125,6 +129,7 @@ export { validarCnpj } from './generators/cnpj.js';
 export { validarInscricaoEstadual } from './generators/inscricao-estadual.js';
 export { validarRenavam } from './generators/veiculo.js';
 export { validarLinhaDigitavel } from './generators/boleto.js';
+export { validarCnh } from './generators/cnh.js';
 
 // --- Types -----------------------------------------------------------------
 export type {

@@ -119,6 +119,7 @@ All option keys are in Portuguese. `mascara` toggles formatting.
 | `cpf`      | `(o?: { mascara? }) => string`              | `'52998224725'` / `'529.982.247-25'`    |
 | `cnpj`     | `(o?: { mascara?, formato? }) => string`    | `'11222333000181'` / `'12ABC34501DE35'` |
 | `rg`       | `(o?: { mascara? }) => string`              | `'246781312'` / `'24.678.131-2'`        |
+| `cnh`      | `() => string`                              | `'69044271146'`                         |
 | `cep`      | `(o?: { mascara? }) => string`              | `'80420130'` / `'80420-130'`            |
 | `telefone` | `(o?: { mascara?, tipo?, ddd? }) => string` | `'11987654321'` / `'(11) 98765-4321'`   |
 | `nome`     | `(o?: { genero?, sobrenome? }) => string`   | `'Helena Souza Lima'`                   |
@@ -173,6 +174,7 @@ import {
   validarInscricaoEstadual,
   validarRenavam,
   validarLinhaDigitavel,
+  validarCnh,
 } from 'dados-br-faker';
 
 validarCpf('529.982.247-25'); // true (with or without mask)
@@ -180,6 +182,7 @@ validarCnpj('12ABC34501DE35'); // true (numeric or alphanumeric)
 validarInscricaoEstadual('110042490114', 'SP'); // true
 validarRenavam('54088307874'); // true
 validarLinhaDigitavel('10492006506100010004200997263900989810000021403'); // true
+validarCnh('69044271146'); // true
 ```
 
 ## Recipes
