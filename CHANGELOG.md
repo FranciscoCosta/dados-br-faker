@@ -1,5 +1,15 @@
 # dados-br-faker
 
+## 0.3.0
+
+### Minor Changes
+
+- Official state-registration (Inscrição Estadual) algorithms for **RJ** and
+  **PR**, ported from `gammasoft/ie` and verified against real vectors.
+  `validarInscricaoEstadual` is now accurate for SP, RJ, PR plus AM, ES, PB, PI,
+  RS, SC, and SE (whose official rule is the plain modulo-11 scheme); the
+  remaining states keep the documented generic scheme.
+
 ## 0.2.0
 
 ### Minor Changes
