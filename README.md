@@ -13,6 +13,8 @@
 
 ![dados-br-faker in action](https://raw.githubusercontent.com/FranciscoCosta/dados-br-faker/main/docs/demo.gif)
 
+<sub>Runnable version of this demo: **[dados-br-faker-demo](https://github.com/FranciscoCosta/dados-br-faker-demo)** — a separate project that installs the package from npm.</sub>
+
 ## Why another Brazilian faker?
 
 Existing libraries generate **isolated, incoherent** fields: a CEP from Curitiba next to a city in Manaus with a São Paulo DDD. For test fixtures, seeds, and demos that actually look real, incoherence is a bug.

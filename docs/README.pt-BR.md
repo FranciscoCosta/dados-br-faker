@@ -13,6 +13,8 @@
 
 ![dados-br-faker em ação](https://raw.githubusercontent.com/FranciscoCosta/dados-br-faker/main/docs/demo.gif)
 
+<sub>Versão executável desta demo: **[dados-br-faker-demo](https://github.com/FranciscoCosta/dados-br-faker-demo)** — projeto separado que instala o pacote do npm.</sub>
+
 ## Por que mais um faker brasileiro?
 
 As bibliotecas existentes geram campos **isolados e incoerentes**: um CEP de Curitiba ao lado de uma cidade de Manaus com DDD de São Paulo. Para fixtures de teste, seeds e demos que pareçam reais, incoerência é bug.
