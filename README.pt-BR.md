@@ -3,7 +3,7 @@
 > Gerador moderno e TypeScript-first de dados fake brasileiros **coerentes** — o CEP pertence à cidade, a cidade ao estado, o DDD do telefone à região, a idade à data de nascimento. Dígitos verificadores válidos, geração determinística por seed, tree-shaking real e suporte pioneiro ao **CNPJ alfanumérico de 2026**.
 
 [![npm version](https://img.shields.io/npm/v/dados-br-faker.svg)](https://www.npmjs.com/package/dados-br-faker)
-[![CI](https://github.com/OWNER/dados-br-faker/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/dados-br-faker/actions/workflows/ci.yml)
+[![CI](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml/badge.svg)](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/dados-br-faker)](https://bundlephobia.com/package/dados-br-faker)
 [![types](https://img.shields.io/npm/types/dados-br-faker.svg)](https://www.npmjs.com/package/dados-br-faker)
 [![license](https://img.shields.io/npm/l/dados-br-faker.svg)](./LICENSE)

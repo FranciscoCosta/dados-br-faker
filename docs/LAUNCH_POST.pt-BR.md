@@ -62,7 +62,7 @@ faker.empresa({ uf: 'SP', cnpjFormato: 'alfanumerico' });
 ### Onde
 
 - npm: `npm i -D dados-br-faker`
-- Repositório: https://github.com/<OWNER>/dados-br-faker
+- Repositório: https://github.com/FranciscoCosta/dados-br-faker
 
 Feedback e contribuições são muito bem-vindos. Se você mantém seeds de banco ou mocks de API pra produto brasileiro, testa aí e me conta.
 

@@ -12,8 +12,8 @@ release is done by hand; subsequent releases are automated with Changesets.
    - GitHub → repo **Settings → Secrets and variables → Actions → New repository
      secret**: name it `NPM_TOKEN`, paste the token.
 3. (Optional) Update the badges: in both READMEs, the CI badge expects
-   `https://github.com/<OWNER>/dados-br-faker/actions/workflows/ci.yml/badge.svg`
-   — replace `<OWNER>` with your GitHub user/org.
+   `https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml/badge.svg`
+   — replace `FranciscoCosta` with your GitHub user/org.
 
 ## 1. Pre-flight (local)
 
