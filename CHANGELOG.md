@@ -1,5 +1,16 @@
 # dados-br-faker
 
+## 0.3.2
+
+### Patch Changes
+
+- Make npmjs.com show the English README.
+
+  npm always includes every `README*` file in the tarball and picks one as the
+  package README; with both `README.md` and `README.pt-BR.md` in the root it chose
+  the Portuguese one. The translation moved to `docs/README.pt-BR.md`, so only
+  `README.md` remains in the root.
+
 ## 0.3.1
 
 ### Patch Changes

@@ -9,7 +9,7 @@
 [![license](https://img.shields.io/npm/l/dados-br-faker.svg)](https://github.com/FranciscoCosta/dados-br-faker/blob/main/LICENSE)
 [![zero deps](https://img.shields.io/badge/runtime%20deps-0-brightgreen.svg)](https://github.com/FranciscoCosta/dados-br-faker/blob/main/package.json)
 
-🇧🇷 [Leia em português](https://github.com/FranciscoCosta/dados-br-faker/blob/main/README.pt-BR.md)
+🇧🇷 [Leia em português](https://github.com/FranciscoCosta/dados-br-faker/blob/main/docs/README.pt-BR.md)
 
 ## Why another Brazilian faker?
 
