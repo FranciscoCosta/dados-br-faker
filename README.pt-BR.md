@@ -1,6 +1,6 @@
 # dados-br-faker
 
-> Gerador moderno e TypeScript-first de dados fake brasileiros **coerentes** — o CEP pertence à cidade, a cidade ao estado, o DDD do telefone à região, a idade à data de nascimento. Dígitos verificadores válidos, geração determinística por seed, tree-shaking real e suporte pioneiro ao **CNPJ alfanumérico de 2026**.
+> Gerador moderno e TypeScript-first de dados fake brasileiros **coerentes**: o CEP pertence à cidade, a cidade ao estado, o DDD do telefone à região, a idade à data de nascimento. Dígitos verificadores válidos, geração determinística por seed, tree-shaking real e suporte pioneiro ao **CNPJ alfanumérico de 2026**.
 
 [![npm version](https://img.shields.io/npm/v/dados-br-faker.svg)](https://www.npmjs.com/package/dados-br-faker)
 [![CI](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml/badge.svg)](https://github.com/FranciscoCosta/dados-br-faker/actions/workflows/ci.yml)
@@ -54,12 +54,12 @@ Requer Node ≥ 18. Distribui ESM + CJS + tipos. **Zero dependências de runtime
 ## Duas formas de usar
 
 ```ts
-// 1) Instância determinística — reproduzível a partir de uma seed
+// 1) Instância determinística, reproduzível a partir de uma seed
 import { createFaker } from 'dados-br-faker';
 const faker = createFaker({ seed: 42 });
 faker.cpf(); // mesmo valor a cada execução para esta seed/posição
 
-// 2) Funções standalone tree-shakeable — sempre aleatórias
+// 2) Funções standalone tree-shakeable, sempre aleatórias
 import { cpf, pessoa } from 'dados-br-faker';
 cpf(); // aleatório a cada chamada
 ```
@@ -81,7 +81,7 @@ Até onde sabemos, em julho de 2026:
 | Zero deps de runtime                        |         ✅         |    ✅    |         ⚠️          |           ✅            |
 | Manutenção ativa                            |         ✅         |    ❌    |         ⚠️          |           ✅            |
 
-O `@faker-js/faker` é uma excelente biblioteca de propósito geral — o locale brasileiro apenas gera campos **isolados**, sem buscar coerência entre campos nem documentos brasileiros válidos. O `dados-br-faker` é mais estreito e opinativo: coerência e documentos corretos são o objetivo central.
+O `@faker-js/faker` é uma excelente biblioteca de propósito geral; o locale brasileiro apenas gera campos **isolados**, sem buscar coerência entre campos nem documentos brasileiros válidos. O `dados-br-faker` é mais estreito e opinativo: coerência e documentos corretos são o objetivo central.
 
 ## O CNPJ alfanumérico (IN RFB nº 2.229/2024)
 
@@ -93,11 +93,11 @@ faker.cnpj({ mascara: true }); // '11.222.333/0001-81'
 faker.cnpj({ formato: 'alfanumerico' }); // '12ABC34501DE35'
 faker.cnpj({ formato: 'alfanumerico', mascara: true }); // '12.ABC.345/01DE-35'
 
-validarCnpj('12.ABC.345/01DE-35'); // true — valida ambos os formatos, com ou sem máscara
+validarCnpj('12.ABC.345/01DE-35'); // true (valida ambos os formatos, com ou sem máscara)
 ```
 
-- Posições 1–8 (raiz) e 9–12 (ordem/filial) podem ser letras `A–Z` ou dígitos; posições 13–14 (verificadores) são sempre numéricas.
-- O DV usa módulo 11 com pesos 2–9, convertendo cada caractere pelo valor ASCII menos 48 (`'0'`–`'9'` → 0–9; `'A'` → 17 … `'Z'` → 42).
+- Posições 1-8 (raiz) e 9-12 (ordem/filial) podem ser letras `A-Z` ou dígitos; posições 13-14 (verificadores) são sempre numéricas.
+- O DV usa módulo 11 com pesos 2-9, convertendo cada caractere pelo valor ASCII menos 48 (`'0'`-`'9'` → 0-9; `'A'` → 17 … `'Z'` → 42).
 
 ## API
 
@@ -146,15 +146,15 @@ faker.endereco({ cidade: 'Curitiba' });
 faker.empresa({ uf: 'RS', cnpjFormato: 'alfanumerico' });
 ```
 
-> Empresas abertas a partir de julho/2026 usariam o CNPJ alfanumérico na vida real — passe `cnpjFormato: 'alfanumerico'` para seeds realistas de empresas recém-abertas.
+> Empresas abertas a partir de julho/2026 usariam o CNPJ alfanumérico na vida real, então passe `cnpjFormato: 'alfanumerico'` para seeds realistas de empresas recém-abertas.
 
 Formatos de retorno: [`Endereco`](./src/types.ts), [`Pessoa`](./src/types.ts), [`Empresa`](./src/types.ts), [`Telefone`](./src/types.ts).
 
 ### Veículos & bancário
 
 ```ts
-faker.placa(); // 'ABC1D23' (Mercosul) — ou { formato: 'antiga' } → 'ABC-1234'
-faker.renavam(); // '54088307874' — DV DENATRAN válido
+faker.placa(); // 'ABC1D23' (Mercosul), ou { formato: 'antiga' } → 'ABC-1234'
+faker.renavam(); // '54088307874', DV DENATRAN válido
 faker.veiculo(); // { marca, modelo, ano, cor, placa, renavam }
 
 faker.chavePix(); // UUID v4 aleatória (chave EVP)
@@ -261,7 +261,7 @@ Versões executáveis estão em [`examples/`](./examples).
 ## Dados & honestidade
 
 - **Documentos** (CPF, CNPJ, IE-SP) têm DV correto, verificados contra vetores conhecidos e 1000+ amostras em testes de propriedade.
-- **Municípios**: as 160 cidades mais populosas, cobrindo as 27 unidades federativas — nome, UF, região e população do **IBGE** (estimativas 2025), DDD do dataset `municipios-brasileiros` e **faixas de CEP reais dos Correios** por cidade.
+- **Municípios**: as 160 cidades mais populosas, cobrindo as 27 unidades federativas, com nome, UF, região e população do **IBGE** (estimativas 2025), DDD do dataset `municipios-brasileiros` e **faixas de CEP reais dos Correios** por cidade.
 - **Nomes**: ponderados pelo ranking de frequência nacional do **IBGE _Nomes no Brasil_** (formas acentuadas curadas), com uma cauda de nomes modernos.
 - **RG** usa o formato de São Paulo; é ilustrativo, não um registro oficial. O Brasil não tem algoritmo nacional único de RG.
 - **Inscrição Estadual**: **SP, RJ e PR** seguem os algoritmos oficiais da SEFAZ (verificados contra vetores reais); **AM, ES, PB, PI, RS, SC, SE** usam a regra de módulo 11 simples, que é também o algoritmo oficial deles. As demais UFs usam um esquema genérico auto-consistente dimensionado ao comprimento da IE do estado. Esses valores servem para fixtures coerentes, não para envio a órgãos fazendários.
