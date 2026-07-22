@@ -16,6 +16,10 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    # Exposes whether the publish token is configured, so the job stays green
+    # until the NPM_TOKEN secret is added.
+    env:
+      HAS_NPM_TOKEN: ${{ secrets.NPM_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -35,9 +39,14 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Skip notice
+        if: env.HAS_NPM_TOKEN != 'true'
+        run: echo "NPM_TOKEN secret not set — skipping release. Add it in repo Settings › Secrets › Actions to enable publishing."
+
       # Opens a "Version Packages" PR when changesets exist; publishes to npm
       # when that PR is merged (i.e. when the version in package.json is new).
       - name: Create Release PR or publish
+        if: env.HAS_NPM_TOKEN == 'true'
         uses: changesets/action@v1
         with:
           publish: pnpm release
