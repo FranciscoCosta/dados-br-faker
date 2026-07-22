@@ -1,6 +1,6 @@
 {
   "name": "dados-br-faker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Modern, TypeScript-first Brazilian fake-data generator with internally coherent entities (CEP↔city↔state↔DDD), valid check digits, deterministic seeding, and the new alphanumeric CNPJ (2026).",
   "keywords": [
     "faker",
@@ -10,6 +10,10 @@
     "cnpj",
     "cnpj-alfanumerico",
     "cep",
+    "boleto",
+    "renavam",
+    "cnh",
+    "pix",
     "fake-data",
     "mock",
     "seed",

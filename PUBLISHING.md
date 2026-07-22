@@ -36,7 +36,7 @@ Confirm the name is available (first release only):
 npm view dados-br-faker   # should 404 the first time
 ```
 
-## 2. First release — v0.1.0 (manual)
+## 2. First release — v0.2.0 (manual)
 
 ```bash
 npm login                        # authenticate your npm account
@@ -46,7 +46,7 @@ npm publish --access public      # prepublishOnly rebuilds dist automatically
 ## 3. Post-publish verification
 
 ```bash
-npm view dados-br-faker version  # should print 0.1.0
+npm view dados-br-faker version  # should print 0.2.0
 
 # Smoke-test in a clean project:
 mkdir /tmp/dbf-esm && cd /tmp/dbf-esm && npm init -y && npm i dados-br-faker
